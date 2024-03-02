@@ -1,0 +1,134 @@
+/* 1. For Diagonal Shape */
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: hsl(0, 0%, 32%);
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.container {
+    width: 100svw;
+    height: 200svh;
+    /* border: 2px solid white;3 */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.diagonal {
+    width: 90rem;
+    height: 140px;
+    padding: 70px 15px;
+    /* border-radius: 10px; */
+    /* align-items: flex-start; */
+    /* gap: 54px; */
+    /* box-sizing: border-box; */
+    position: relative;
+    isolation: isolate;
+}
+
+.diagonal::after {
+    content: '';
+    background-image: linear-gradient(45deg, rgb(91, 166, 206), rgb(225, 101, 225), rgb(228, 186, 107));
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(-3deg);
+}
+
+
+/* 2. For Spiky Shapes */
+.spikes {
+    --spike-width: 50px;
+    --spike-height: 10px;
+    --spike-color: var(--bg-color);
+    width: 90rem;
+    height: 120px;
+    padding: 70px 15px;
+    /* border-radius: 10px; */
+    position: relative;
+    color: black;
+    /* border: 2px solid black; */
+    background: linear-gradient(to right, rgb(242, 242, 74), rgb(230, 109, 230));
+}
+
+.spikes::before,
+.spikes::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: var(--spike-height);
+    background: var(--spike-color);
+    -webkit-mask-image: url(triangle.svg);
+    mask-image: url(triangle.svg);
+    -webkit-mask-size: var(--spike-width) var(--spike-height);
+    mask-size: var(--spike-width) var(--spike-height);
+}
+
+.spikes::before {
+    top: 0;
+    left: 0;
+}
+
+.spikes::after {
+    bottom: -1px;
+    left: 0;
+    transform: rotate(0.5turn);
+}
+
+/* Create a svg using SvgPathEditor */
+
+
+/* 3. For Wavy Shapes */
+.wavy {
+    width: 90rem;
+    height: 120px;
+    padding: 70px 15px;
+    position: relative;
+    color: black;
+    background: linear-gradient(to right, rgb(74, 197, 242), rgb(109, 230, 119));
+
+    --mask:
+    radial-gradient(36.15px at 49.60px 50%,#000 99%,#0000 101%) 0 calc(50% - 62px)/51% 124px repeat-y,
+    radial-gradient(36.15px at -18.6px 50%,#0000 99%,#000 101%) 31px 50%/calc(51% - 31px) 124px repeat-y,
+		radial-gradient(36.15px at calc(100% - 49.60px) 50%,#000 99%,#0000 101%) 100% calc(50% - 62px)/51% 124px repeat-y,
+    radial-gradient(36.15px at calc(100% + 18.60px) 50%,#0000 99%,#000 101%) calc(100% - 31px) 50%/calc(51% - 31px) 124px repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+
+
+/* Use CSS Generators which is more easy */
+
+.des {
+    height: 70svh;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.flat1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

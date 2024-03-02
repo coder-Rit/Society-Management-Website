@@ -1,0 +1,55 @@
+/* For a scroll watcher on the page */
+/* transform-origin: left;
+animation: scroll-watcher linear;
+animation-timeline: scroll(); */
+@keyframes scroll-watcher{
+    from{scale: 0 1;}
+    to {scale: 1 1; }
+}
+
+
+/* For a fading effect to images */
+/* @media(prefers-reduced-motion: no-preference){} */
+/* animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: 250px;
+  animation-range-end: 500px; */
+@keyframes fade-in {
+    from{scale: 1; opacity: 0;}
+    to{scale: 1; opacity: 1;}
+}
+
+/* For fading out the hero image  */
+/* animation: header-fade linear forwards;
+animation-timeline: view() */
+@keyframes header-fade{
+    25%{
+        opacity: 1;
+    }
+    85%, 100%{
+        opacity: 0;
+    }
+}
+
+/* For Fading out the hero content
+animation: fade-out linear;
+animation-timeline: view();
+animation-range: exit -200px */
+@keyframes fade-out{
+    to{
+        opacity: 0;
+    }
+}
+
+/* For True parallax effect */
+/* display:grid;Displaying the parallax in grid
+grid-template-areas: "stack";
+grid-area:stack; Apply to overall elements
+/* --parallax-speed:50; Give to each element */
+/* animation:parallax linear;Apply to overall elements */
+/* animation-timeline:scroll();Apply to overall elements */
+@keyframes parallax {
+    to{
+        transform: translateY(calc(var(--parallax-speed) * 200px));
+    }
+}
