@@ -191,11 +191,11 @@ header> #start {
     width: 50svw;
     height: 2rem;
     text-align: center;
-    border: 1px solid #5D96BF;
+    border: 1px solid #52CC7C;
     font-size: 20px;
 }
 .search button{
-    background-color: #5D96BF;
+    background-color: #52CC7C;
     border: 1px solid white;
     height: 2rem;
 }
