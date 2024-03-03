@@ -186,9 +186,10 @@ header #start {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1200px;
     margin: 40px auto;
+    gap: 30px;
 }
 .gallery-item:hover {
     transform: scale(1.07);
@@ -229,6 +230,18 @@ header #start {
 }
 .gal-9 img{
     object-position: 0px -80px;
+}
+.gal-34 img{
+    object-position: 0px -200px;
+}
+.gal-40 img{
+    object-position: 0px -150px;
+}
+.gal-42 img{
+    object-position: 0px -400px;
+}
+.gal-43 img{
+    object-position: 0px -400px;
 }
 .description {
     padding: 10px;
