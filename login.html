@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Feature images/apple-touch-icon.png">
     <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
     <title>Login</title>
 </head>
 
@@ -48,41 +49,62 @@
         <a class="links" href="payment.html">Payment</a>
     </nav>
 
-    <div class="login">
-        <img src="Background_images/society2.jpeg" alt="">
-
-        <form action="/action_page.php" method="post">
-            <h2>Login Form</h2>
-
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button id="login" type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
+    <div class="body">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1 id="signin">Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><img src="Feature images/facebook.png" alt="Facebook"></a>
+                        <a href="#" class="social"><img src="Feature images/google.png" alt="Google"></a>
+                        <a href="#" class="social"><img src="Feature images/twitter.png" alt="Twitter"></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <div class="flatinfo">
+                        <input type="number" id="flat" placeholder="Flat Number" />
+                        <input type="text" id="wing" placeholder="Wing" />
+                    </div>
+                    <select name="typeofuser" class="usertype">
+                        <option value="Select">Select Type of User</option>
+                        <option value="Tenant">Tenant</option>
+                        <option value="Committee Member">Committee Member</option>
+                    </select>
+                    <button id="sign" type="button">Sign Up</button>
+                </form>
             </div>
-            <div class="container container2">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1 id="login">Log In</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><img src="Feature images/facebook.png" alt="Facebook"></a>
+                        <a href="#" class="social"><img src="Feature images/google.png" alt="Google"></a>
+                        <a href="#" class="social"><img src="Feature images/twitter.png" alt="Twitter"></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button id="log" type="button">Log In</button>
+                </form>
             </div>
-
-            <div class="col">
-                <a href="#" class="fb btn">
-                    <p class="facebook">Login with Facebook</p>
-                </a>
-                <a href="#" class="twitter btn">
-                    <p class="twitter"> Login with Twitter</p>
-                </a>
-                <a href="#" class="google btn">
-                    <p class="google">Login with Google+</p>
-                </a>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="hello">Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Log In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="hello">Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
     </div>
 
 
