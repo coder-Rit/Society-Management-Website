@@ -55,7 +55,7 @@ header>#start {
     font-weight: bold;
     border-radius: 7px;
     cursor: pointer;
-    transition: all 0.4s;
+    /* transition: all 0.4s; */
     font-family: 'Poppins', sans-serif;
 }
 #start:hover {
@@ -84,12 +84,14 @@ header>#start {
     position: absolute;
     background-color: white;
     min-width: 150px;
-    z-index: 10;
 }
 .navigation {
-    background-color: white;
+    background-color: White;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
 }
 .links,
 .links-hidden {
@@ -143,11 +145,6 @@ header>#start {
 	font-weight: bold;
 	margin: 0;
 }
-
-h2 {
-	text-align: center;
-}
-
 p {
 	font-size: 14px;
 	font-weight: 100;
@@ -160,7 +157,7 @@ span {
 	font-size: 12px;
 }
 
-a {
+.fyg{
 	color: #333;
 	font-size: 14px;
 	text-decoration: none;
@@ -288,7 +285,7 @@ input, select{
 .container.right-panel-active .sign-up-container {
 	transform: translateX(100%);
 	opacity: 1;
-	z-index: 5;
+	z-index: 3;
 	animation: show 0.6s;
 }
 
