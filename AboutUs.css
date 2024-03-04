@@ -7,6 +7,28 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Scroll Watcher */
+.scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient( 329deg, #25a4c3,rgb(19, 231, 104));
+    width: 100%;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+@keyframes scroll-watcher {
+    from {
+        scale: 0 1;
+    }
+
+    to {
+        scale: 1 1;
+    }
 }
 
 body {
@@ -34,7 +56,7 @@ header .title {
     height: 80px;
 }
 header {
-    background-color: #56a6ce;
+    background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -45,9 +67,10 @@ header {
 header>#start {
     border: 2px solid white;
     padding: 10px;
-    background-color: rgb(93, 150, 191);
+    background-color: green;
     color: white;
     border-radius: 7px;
+    font-weight: bold;
     cursor: pointer;
     height: 55px;
     font-size: 17px;
@@ -55,9 +78,9 @@ header>#start {
 
 #start:hover {
     background-color: white;
-    color: rgb(93, 150, 191);
+    color: green;
     box-shadow: 5px 8px 10px 2px rgba(0, 0, 0, 0.25);
-    /* border: 2px solid black; */
+    border: 2px solid green;
 }
 
 .menu-btn {
@@ -115,7 +138,7 @@ header>#start {
 
 .links-hidden:hover,
 .links:hover {
-    background-color: rgb(93, 150, 191);
+    background-color: #4dab6e;
     color: white;
 }
 
@@ -124,7 +147,7 @@ header>#start {
 }
 
 .dropdown-menu:hover .menu-btn {
-    background-color: rgb(93, 150, 191);
+    background-color: #4dab6e;
     color: white;
 }
 
@@ -382,27 +405,27 @@ h1 {
 } */
 #item-1 {
     left: 6rem;
-    color: rgb(0, 187, 255);
+    color: rgb(191, 228, 135);
 }
 
 #item-2 {
     left: 16rem;
-    color: rgb(0, 187, 255);
+    color: rgb(191, 228, 135);
 }
 
 #item-3 {
     left: 27rem;
-    color: rgb(0, 187, 255);
+    color:  rgb(191, 228, 135);
 }
 
 #item-4 {
     left: 45rem;
-    color: rgb(0, 187, 255);
+    color:  rgb(191, 228, 135);
 }
 
 #item-5 {
     left: 70rem;
-    color: rgb(0, 187, 255);
+    color: rgb(191, 228, 135);
 }
 
 #item-6 {
