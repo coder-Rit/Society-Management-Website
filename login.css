@@ -185,6 +185,7 @@ span {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+	margin-top: 10px;
 }
 
 #sign:active {
@@ -247,7 +248,7 @@ form {
 input, select{
 	background-color: #eee;
 	border: none;
-	padding: 9px 15px;
+	padding: 15px 15px;
 	margin: 8px 0 10px 0px;
 	width: 100%;
 }
@@ -265,7 +266,7 @@ input, select{
 	overflow: hidden;
 	width: 768px;
 	max-width: 100%;
-	min-height: 480px;
+	min-height: 555px;
 	justify-self: center;
 	align-self: center;
 }
