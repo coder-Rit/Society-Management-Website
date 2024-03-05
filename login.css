@@ -37,6 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+	z-index: 100;
 }
 header .title{
     font-size: 27px;
@@ -124,14 +125,23 @@ header>#start {
 /* Login Form */
 .body {
 	background: #f6f5f7;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: "stack";
 	font-family: 'Montserrat', sans-serif;
+	/* border: 2px solid black; */
 	height: 100vh;
-	margin: -20px 0 50px;
-    z-index: 0  ;
+    z-index: 0;
+}
+.body> *{
+    grid-area: stack;
+}
+.backimg{
+	background-image: url("Feature images/Society\ View4.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover ;
+	filter: opacity(0.5);
 }
 #signin{
 	font-weight: bold;
@@ -256,6 +266,8 @@ input, select{
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+	justify-self: center;
+	align-self: center;
 }
 
 .form-container {
