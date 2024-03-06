@@ -133,7 +133,7 @@ header> #start {
 
 /* Features Description */
 main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 99svw;
     height: 70%;
     display: flex;
@@ -145,7 +145,7 @@ main{
     padding: 38px 0px 55px 0px;
 }
 .container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 90rem;
     height: 340px;
     padding: 15px;
@@ -156,7 +156,7 @@ main{
     gap: 54px;
 }
 .container .img{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 600px;
     height: 340px;
     display: flex;
@@ -176,7 +176,7 @@ main{
     text-align: center;
 }
 .container .sideinfo{
-    border: 1px solid black;
+    /* border: 1px solid black;  */
     height: 310px;
     padding: 12px;
     display: flex;

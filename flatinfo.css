@@ -17,7 +17,7 @@ html{
     height: 10px;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 1000;  
     /* background-image: linear-gradient( 329deg, rgb(89, 199, 229),blue); */
     background: linear-gradient( 329deg, #25a4c3,rgb(19, 231, 104));
     width: 100%;
@@ -133,7 +133,7 @@ header> #start {
 
 /* Flat Info Description */
 main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 99svw;
     height: 70%;
     display: flex;
@@ -146,6 +146,7 @@ main{
 }
 .container{
     border: 1px solid #4dab6e;
+    box-shadow: 6px 7px 16px 0px rgba(0, 0, 0, 0.3);
     width: 90rem;
     height: 340px;
     padding: 15px;
@@ -187,13 +188,14 @@ main{
 .container .sideinfo{
     width: 100%;
     /* border: 1px solid black; */
-    height: 310px;
-    padding: 12px;
+    height: 340px;
+    /* padding: 12px; */
     display: grid;
     gap: 10px;
     grid-template-areas: "head head button"
                          "info info button"
-                         "content content button" ;
+                         "content content button"
+                         "map map button" ;
     scale: 1; opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
@@ -208,17 +210,38 @@ main{
 /* Buttons section within the Sideinfo section for displaying the price and contact info of the owner */
 .sideinfo .buttons{
     /* border: 1px solid black; */
-    /* background-color: #4dab6e63; */
+    background-color: #4dab6e63;
     grid-area: button;
     width: 200px;
-    height: 310px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
 }
-.sideinfo .buttons h2{
-    text-align: center;
+.sideinfo .buttons .price{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.price #price{
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    align-self: center;
+}
+.price #price img{
+    height: 20px;
+    width: 20px;
+}
+.sideinfo .buttons #charges{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+.sideinfo .buttons #charges:hover{
+    text-decoration: none;
 }
 .sideinfo .buttons #contact{
     border-radius: 50px;
@@ -283,7 +306,28 @@ main{
     overflow: hidden;  
     text-overflow: ellipsis;
 }
-
+.sideinfo .map{
+    /* border: 1px solid black; */
+    grid-area: map;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+.map #map{
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    color: #4dab6e;
+    text-decoration: underline;
+}
+.map img{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+.map #map:hover{
+    text-decoration: none;
+}
 /* Footer */
 footer {
     background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);      

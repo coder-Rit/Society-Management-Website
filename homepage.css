@@ -310,6 +310,9 @@ header> #start {
     background-color: green;
     border: 2px solid white;
 }
+.about button:focus{
+    transform: scale(0.95);
+}
 .about button:hover{
     background-color: white;
     color: green;
