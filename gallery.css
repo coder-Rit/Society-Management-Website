@@ -176,6 +176,7 @@ header #start {
 .parallax-content h1 {
     padding: 20px;
     font-family: 'Poppins', sans-serif;
+    font-style: italic;
     font-weight: bolder;
     font-size: 90px;
     text-align: center;
