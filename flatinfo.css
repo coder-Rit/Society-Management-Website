@@ -158,13 +158,11 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 40px;
     padding: 38px 0px 55px 0px;
 }
-
-.container {
-    border: 1px solid #4dab6e;
-    box-shadow: 6px 7px 16px 0px rgba(0, 0, 0, 0.3);
+.cont1{
+    border: 1px solid #4dab6e52;
     max-width: 90rem;
     min-height: 340px;
     padding: 15px;
@@ -174,7 +172,36 @@ main {
     justify-content: start;
     gap: 24px;
 }
-
+.cont1:hover{
+    box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.3);
+}
+.cont1 .img{
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.container {
+    border: 1px solid #4dab6e52;
+    max-width: 90rem;
+    min-height: 340px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 24px;
+    scale: 1; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 200px;
+}
+.container:hover{
+    box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.3);
+}
 /* Image and Caption */
 .container .img {
     /* border: 1px solid black; */
@@ -191,6 +218,10 @@ main {
     width: 550px;
     height: 300px;
     border-radius: 30px;
+    scale: 1; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 200px;
 }
 
 .img .photo img {
@@ -198,10 +229,10 @@ main {
     height: 300px;
     border-radius: 30px;
     object-fit: contain;
-    /* scale: 1; opacity: 0;
+    scale: 1; opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: entry 200px; */
+    animation-range: entry 200px;
 }
 
 /* SideInfo Section for displaying the information of the flat */
@@ -216,10 +247,10 @@ main {
         "info info button"
         "content content button"
         "map map button";
-    /* scale: 1; opacity: 0;
+    scale: 1; opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: entry 200px; */
+    animation-range: entry 200px;
 }
 
 .sideinfo .heading {
@@ -248,29 +279,29 @@ main {
     gap: 3px;
 }
 
-.price #price {
+.price .prices{
     height: 20px;
     background-color: transparent;
     border: none;
     align-self: center;
 }
 
-.price #price img {
+.price .prices img {
     height: 20px;
     width: 20px;
 }
 
-.sideinfo .buttons #charges {
+.sideinfo .buttons .charges {
     background-color: transparent;
     border: none;
     text-decoration: underline;
 }
 
-.sideinfo .buttons #charges:hover {
+.sideinfo .buttons .charges:hover {
     text-decoration: none;
 }
 
-.sideinfo .buttons #contact {
+.sideinfo .buttons .contact {
     border-radius: 50px;
     border: 1px solid #4dab6e;
     background-color: #4dab6e;
@@ -284,15 +315,15 @@ main {
     transition: transform 80ms ease-in;
 }
 
-.sideinfo .buttons #contact:active {
+.sideinfo .buttons .contact:active {
     transform: scale(0.95);
 }
 
-.sideinfo .buttons #contact:focus {
+.sideinfo .buttons .contact:focus {
     outline: none;
 }
 
-.sideinfo .buttons #status {
+.sideinfo .buttons .status {
     background-color: white;
     border: 1px solid #4dab6e;
     border-radius: 50px;
@@ -306,11 +337,11 @@ main {
     transition: transform 80ms ease-in;
 }
 
-.sideinfo .buttons #status:active {
+.sideinfo .buttons .status:active {
     transform: scale(0.95);
 }
 
-.sideinfo .buttons #status:focus {
+.sideinfo .buttons .status:focus {
     outline: none;
 }
 
@@ -357,7 +388,7 @@ main {
     justify-content: center;
 }
 
-.map #map {
+.map .maps {
     font-size: 17px;
     border: none;
     background-color: transparent;
@@ -371,7 +402,7 @@ main {
     align-self: center;
 }
 
-.map #map:hover {
+.map .maps:hover {
     text-decoration: none;
 }
 
