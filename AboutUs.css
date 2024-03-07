@@ -289,10 +289,23 @@ h1 {
 
 .coms {
     padding: 31px 0px;
-    background-color: black;
-    color: yellow;
+    background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
+    background-size: 300% 300%;
+    animation: color 3s ease-in-out infinite;
+    color: black;
 }
 
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
 /*xxxxxxxxxxxxxxxxxxxxxxxxx Committee-End xxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* ----------------------Carousel-Start---------------------- */
@@ -375,27 +388,42 @@ h1 {
 
 /* Flat Description */
 .des {
-    background-color: black;
-    color: rgb(200, 200, 29);
+    background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
+    background-size: 300% 300%;
+    animation: color 3s ease-in-out infinite;
+    color: black;
     height: 14rem;
 }
 
 .des h1 {
     padding-bottom: 2rem;
 }
+.dash{
+    display: flex;
+    gap: 6.5rem;
+    justify-content: center;
+}
 
 .flat {
     /* background-color: black; */
 
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.flat p {
-    display: inline-block;
-    font-size: 25px;
+.counter-numbers{
+    
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: white;
+    padding: 0 10px;
+    position: relative;
+}
+.det{
+    font-size: 30px;
     font-weight: bold;
-    color: rgb(200, 200, 29);
+    color: black;
     padding: 0 10px;
     position: relative;
 }
@@ -403,56 +431,7 @@ h1 {
 /* .flat-1{
     background-color: orange;
 } */
-#item-1 {
-    left: 6rem;
-    color: rgb(191, 228, 135);
-}
-
-#item-2 {
-    left: 16rem;
-    color: rgb(191, 228, 135);
-}
-
-#item-3 {
-    left: 27rem;
-    color:  rgb(191, 228, 135);
-}
-
-#item-4 {
-    left: 45rem;
-    color:  rgb(191, 228, 135);
-}
-
-#item-5 {
-    left: 70rem;
-    color: rgb(191, 228, 135);
-}
-
-#item-6 {
-    left: 4.6rem;
-    font-size: 40px;
-}
-
-#item-7 {
-    left: 12rem;
-    font-size: 40px;
-}
-
-#item-8 {
-    left: 18rem;
-    font-size: 40px;
-}
-
-#item-9 {
-    left: 24rem;
-    font-size: 40px;
-}
-
-#item-10 {
-    left: 29rem;
-    font-size: 40px;
-}
-
+/* Mini Dashboard */
 
 /* .des{
     height: 20vh;
@@ -461,7 +440,7 @@ h1 {
     gap: 40px;
     justify-content: center;
     background-color: black;
-    color: yellow;
+    color: black;
     font-size: 25px;
     font-weight: bold;
 }
