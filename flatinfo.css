@@ -56,7 +56,6 @@ header {
     align-items: center;
     padding: 15px;
 }
-
 header .title {
     font-size: 27px;
     font-weight: 800;
@@ -64,7 +63,6 @@ header .title {
     width: 250px;
     margin-left: 15px;
 }
-
 header>#start {
     border: 2px solid white;
     padding: 10px;
@@ -76,14 +74,12 @@ header>#start {
     font-size: 17px;
     cursor: pointer;
 }
-
 #start:hover {
     background-color: white;
     color: green;
     box-shadow: 5px 8px 10px 2px rgba(0, 0, 0, 0.25);
     border: 2px solid green;
 }
-
 .menu-btn {
     background-color: white;
     color: black;
@@ -93,12 +89,10 @@ header>#start {
     border: none;
     cursor: pointer;
 }
-
 .dropdown-menu {
     position: relative;
     display: inline-block;
 }
-
 .menu-content {
     display: none;
     position: absolute;
@@ -106,7 +100,6 @@ header>#start {
     min-width: 150px;
     z-index: 1;
 }
-
 .navigation {
     background-color: White;
     display: flex;
@@ -115,7 +108,6 @@ header>#start {
     top: -1px;
     z-index: 1;
 }
-
 .links,
 .links-hidden {
     color: black;
@@ -123,26 +115,21 @@ header>#start {
     text-decoration: none;
     font-size: 16px;
 }
-
 .links-hidden {
     display: block;
 }
-
 .links {
     font-size: 18px;
     display: inline-block;
 }
-
 .links-hidden:hover,
 .links:hover {
     background-color: #4dab6e;
     color: white;
 }
-
 .dropdown-menu:hover .menu-content {
     display: block;
 }
-
 .dropdown-menu:hover .menu-btn {
     background-color: #4dab6e;
     color: white;
@@ -161,30 +148,14 @@ main {
     gap: 40px;
     padding: 38px 0px 55px 0px;
 }
-.cont1{
-    border: 1px solid #4dab6e52;
-    max-width: 90rem;
-    min-height: 340px;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 24px;
-}
-.cont1:hover{
-    box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.3);
-}
-.cont1 .img{
-    /* border: 1px solid black; */
-    width: 600px;
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
+.features{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
 }
 .container {
+    grid-column: 1;
+    grid-row: 1;
     border: 1px solid #4dab6e52;
     max-width: 90rem;
     min-height: 340px;
@@ -194,10 +165,6 @@ main {
     flex-direction: row;
     justify-content: start;
     gap: 24px;
-    scale: 1; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry 200px;
 }
 .container:hover{
     box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.3);
@@ -218,10 +185,6 @@ main {
     width: 550px;
     height: 300px;
     border-radius: 30px;
-    scale: 1; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry 200px;
 }
 
 .img .photo img {
@@ -229,10 +192,6 @@ main {
     height: 300px;
     border-radius: 30px;
     object-fit: contain;
-    scale: 1; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry 200px;
 }
 
 /* SideInfo Section for displaying the information of the flat */
@@ -240,23 +199,17 @@ main {
     width: 100%;
     /* border: 1px solid black; */
     height: 340px;
-    /* padding: 12px; */
     display: grid;
     gap: 10px;
     grid-template-areas: "head head button"
         "info info button"
         "content content button"
         "map map button";
-    scale: 1; opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry 200px;
 }
 
 .sideinfo .heading {
     /* border: 1px solid black; */
     grid-area: head;
-    /* height: 50px; */
 }
 
 /* Buttons section within the Sideinfo section for displaying the price and contact info of the owner */
@@ -278,7 +231,6 @@ main {
     justify-content: center;
     gap: 3px;
 }
-
 .price .prices{
     height: 20px;
     background-color: transparent;
@@ -405,6 +357,60 @@ main {
 .map .maps:hover {
     text-decoration: none;
 }
+/* Popup box */
+.popup{
+    /* z-index: 2; */
+    background-color: #4dab6e;
+    color: white;
+    padding: 20px;
+    width: 500px;
+    height: 335px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between  ;
+    box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.3);
+    filter: opacity();
+}
+.pop1, .pop2{
+    /* border: 1px solid black; */
+    display:flex;
+    flex-direction: column;
+    gap: 7px;
+}
+#cont1{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    display: none;
+}
+.rent{
+    height: 40px;
+    /* padding: 0px 9px; */
+    display: flex;
+    justify-content: space-between;
+}
+.rent p,h1{
+    align-self: center;
+}
+.rent1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.113);
+}
+.firstmonth{
+    /* border: 1px solid black; */
+    height: 40px;
+    /* padding: 0px 9px; */
+    display: flex;
+    justify-content: space-between;
+}
+.firstmonth h4, h3 , p{
+    align-self: center;
+}
+.month{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.113);
+}
+
+
 
 /* Footer */
 footer {
