@@ -10,45 +10,24 @@
 
 <body>
 
-    <div class="container">
-        <button onclick="showOrHide()">Show or Hide</button>
-        <div id="cont1">
-            <div class="popup">
-                <div class="pop1">
-                    <div class="rent">
-                        <p>Rent</p>
-                        <p>₹30,000</p>
-                    </div>
-                    <div class="rent rent1">
-                        <p>Monthly Maintenance</p>
-                        <p>₹3,000</p>
-                    </div>
-                    <div class="rent">
-                        <h1>Monthly Charges</h1>
-                        <p>₹33,000</p>
-                    </div>
-                </div>
-
-                <div class="pop2">
-                    <h4>First Month Charges</h4>
-                    <div class="firstmonth">
-                        <p>Monthly Charges</p>
-                        <p>₹33,000</p>
-                    </div>
-                    <div class="firstmonth month">
-                        <p>Security Deposit</p>
-                        <p>₹33,000</p>
-                    </div>
-                    <div class="firstmonth">
-                        <h3>Total Amount of First Month</h3>
-                        <p>₹33,000</p>
-                    </div>
-                </div>
-            </div>
+    <button class="open" type="button">Open</button>
+    <dialog class="modal" id="modal">
+        <div>
+            <button class="close">&times;</button>
         </div>
-    </div>
+        <form action="#" method="dialog">
+            <div class="h1">
+                <h1 id="signin">Enter your Whatsapp No. to get Contact Details of the Owner</h1>
+            </div>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="tel" placeholder="Your Whatsapp Number" pattern="[0-9]{10}" required />
+            <button class="submitcon" type="submit">Submit</button>
+        </form>
+    </dialog>
 
-    <script src="popup.js"></script>
+
+    <script src="popup2.js"></script>
 </body>
 
 </html>

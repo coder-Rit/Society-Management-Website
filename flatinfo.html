@@ -70,11 +70,25 @@
                     <div class="buttons">
                         <div class="price">
                             <h2>₹30,000</h2>
-                            <button type="button" class="prices" onclick="showOrHide()"><img
+                            <button type="button" class="prices" onclick="show()"><img
                                     src="Feature images/info_icon.png" alt="price"></button>
                         </div>
-                        <button type="button" class="charges" onclick="showOrHide()">See other charges</button>
+                        <button type="button" class="charges" onclick="show ()">See other charges</button>
                         <button type="button" class="contact">Contact Owner</button>
+                        <dialog class="modal" id="modal">
+                            <div>
+                                <button class="close">&times;</button>
+                            </div>
+                            <form action="#" method="dialog">
+                                <div class="h1">
+                                    <h1 id="signin">Enter your Whatsapp No. to get Contact Details of the Owner</h1>
+                                </div>
+                                <input type="text" placeholder="Name" required />
+                                <input type="email" placeholder="Email" required />
+                                <input type="tel" placeholder="Your Whatsapp Number" pattern="[0-9]{10}" required />
+                                <button class="submitcon" type="submit">Submit</button>
+                            </form>
+                        </dialog>
                         <button type="button" class="status">Check Availability</button>
                     </div>
                     <div class="info">
@@ -140,7 +154,8 @@
                 </div>
             </section>
             <div id="cont1">
-                <div class="popup">
+                <div class="popup" id="popup">
+                    <button class="close" id="close" onclick="this.parentElement.style.display='none'">&times;</button>
                     <div class="pop1">
                         <div class="rent">
                             <p>Rent</p>
@@ -174,7 +189,6 @@
                 </div>
             </div>
         </div>
-
     </main>
     <footer>
         <div>
