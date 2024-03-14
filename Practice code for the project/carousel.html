@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+        .slider-wrapper{
+            border: 1px solid black;
+            position: relative;
+            max-width: 38rem;
+            max-height: 38rem;
+        }
+        .slider{
+            border: 1px solid black;
+            display: flex;
+            aspect-ratio: 17/13;
+            overflow-x: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+            border-radius: 0.5rem;
+        }
+        .slider img{
+            flex: 1 0 100%;
+            object-fit: cover;
+            scroll-snap-align: start;
+        }
+        .slider-nav{
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav a{
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0.75;
+            transition: opacity ease 250ms;
+        }
+        .slider-nav a:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="carousel">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="Gallery Photos/event1.jpeg"alt="" id="slide-1">
+                <img src="Gallery Photos/event2.jpeg"alt="" id="slide-2">
+                <img src="Gallery Photos/event3.jpeg"alt="" id="slide-3">
+                <img src="Gallery Photos/event4.jpeg"alt="" id="slide-4">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

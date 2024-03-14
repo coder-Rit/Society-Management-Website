@@ -51,3 +51,4 @@ toggleButton.addEventListener("click", function () {
     }
 });
 
+// Carousel

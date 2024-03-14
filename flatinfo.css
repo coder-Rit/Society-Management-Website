@@ -171,27 +171,55 @@ main {
 }
 /* Image and Caption */
 .container .img {
-    /* border: 1px solid black; */
-    width: 600px;
-    height: 340px;
+    border: 1px solid black;
+    width: 570px;
+    height: 305px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
 }
 
-.img .photo {
+.slider-wrapper{
     border: 1px solid black;
-    width: 550px;
-    height: 300px;
-    border-radius: 30px;
+    position: relative;
+    width: 570px;
+    height: 320px;
 }
-
-.img .photo img {
-    width: 550px;
-    height: 300px;
-    border-radius: 30px;
-    object-fit: contain;
+.slider{
+    border: 1px solid black;
+    display: flex;
+    aspect-ratio: 15/8;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider img{
+    flex: 1 0 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
 }
 
 /* SideInfo Section for displaying the information of the flat */
