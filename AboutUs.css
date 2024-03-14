@@ -313,6 +313,8 @@ h1 {
     width: 100vw;
     height: 100vh;
     position: relative;
+    object-fit: contain;
+    object-position: center;
     /* animation: carousel-animation 3s infinite; */
 }
 
@@ -338,10 +340,12 @@ h1 {
 
 .slide>img {
     display: block;
-    width: 85%;
-    height: 85%;
-    object-fit: contain;
-    object-position: center;
+    width: 90%;
+    height: 90%;
+    /* object-fit: cover; */
+    /* object-position: center; */
+    /* object-fit: contain;
+    object-position: center; */
 }
 
 .carousel-button {
