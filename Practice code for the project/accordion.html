@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .accordion{
+            margin: 1rem;
+            padding: 1rem;
+            background-color: aqua;
+            border-radius: 0.5rem;
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 1000ms;
+        }
+        .accordion .content{
+            grid-row: 1/span 2;
+            overflow: hidden;
+        }
+        .accordion:hover{
+            grid-template-rows: 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis sequi voluptate repudiandae id ut aliquam exercitationem? Nisi, quos quisquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis sequi voluptate repudiandae id ut aliquam exercitationem? Nisi, quos quisquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis sequi voluptate repudiandae id ut aliquam exercitationem? Nisi, quos quisquam?</p>
+        </div>
+    </div>
+</body>
+</html>

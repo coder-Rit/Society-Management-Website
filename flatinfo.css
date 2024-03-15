@@ -171,7 +171,7 @@ main {
 }
 /* Image and Caption */
 .container .img {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 570px;
     height: 305px;
     display: flex;
@@ -181,20 +181,20 @@ main {
 }
 
 .slider-wrapper{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
     width: 570px;
     height: 320px;
 }
 .slider{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     aspect-ratio: 15/8;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 .slider img{
     flex: 1 0 100%;
@@ -355,20 +355,21 @@ main {
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     max-height: 150px;
     grid-area: content;
 }
 .content p{
-    border: 1px solid black;
-    height: 70px;
-    width: 550px;
+    /* border: 1px solid black; */
+    /* height: 70px; */
+    width: 600px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;   
+    overflow: hidden;
+    appearance: none;   
 }
-.content .drop{
+/* .content .drop{
     width: 50px;
     height: 40px;
     background-color: transparent;
@@ -379,7 +380,7 @@ main {
 .drop img{
     width: 50px;
     height: 30px;
-}
+} */
 
 .sideinfo .map {
     /* border: 1px solid black; */

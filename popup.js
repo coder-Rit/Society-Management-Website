@@ -39,7 +39,7 @@ closeModal.addEventListener('click', () => {
     modal.close();
 })
 
-
+// JS Reading hidden paragraph
 const toggleButton = document.getElementById("drop");
 const hiddenParagraph = document.getElementById("hidden-paragraph");
 
