@@ -130,6 +130,19 @@ header> #start {
     color: white;
 }
 
+#contact{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
+}
+#map{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 900;
+}
 /* Contact Section */
 .container{
     height: 80svh;
@@ -225,7 +238,7 @@ textarea {
 .map{
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
 }
 .map iframe{
     width : 80svw;

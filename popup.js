@@ -28,7 +28,7 @@ let showMap = function () {
 }
 
 // JS for modal opening
-const modal = document.querySelector('#modal');
+const modal = document.querySelector('.modal');
 const openModal = document.querySelector('.contact');
 const closeModal = document.querySelector('.close');
 

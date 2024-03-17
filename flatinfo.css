@@ -145,25 +145,29 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
     padding: 38px 0px 55px 0px;
 }
 .features{
-    border: 1px solid black;
+    width: 89svw;
+    height: 46svh;
+    /* border: 1px solid black; */
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(5, 304px);
+    grid-template-rows: repeat(4, 95px);
 }
 .container {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1/span 6;
+    grid-row: 1/span 4;
     border: 1px solid #4dab6e52;
-    max-width: 90rem;
+    max-width: 100rem;
     max-height: 540px;
     padding: 15px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+    display: grid;
+    grid-template-areas: "img details details"
+                         "map map map";
+    
     gap: 24px;
 }
 .container:hover{
@@ -172,6 +176,7 @@ main {
 /* Image and Caption */
 .container .img {
     /* border: 1px solid black; */
+    grid-area:img;
     width: 570px;
     height: 305px;
     display: flex;
@@ -224,6 +229,7 @@ main {
 
 /* SideInfo Section for displaying the information of the flat */
 .container .sideinfo {
+    grid-area: details;
     width: 100%;
     /* border: 1px solid black; */
     height: 340px;
@@ -354,14 +360,10 @@ main {
 .sideinfo .content {
     display: flex;
     justify-content: flex-start;
-    /* align-items: center; */
-    /* border: 1px solid black; */
     max-height: 150px;
     grid-area: content;
 }
 .content p{
-    /* border: 1px solid black; */
-    /* height: 70px; */
     width: 600px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -369,18 +371,7 @@ main {
     overflow: hidden;
     appearance: none;   
 }
-/* .content .drop{
-    width: 50px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    display: flex;
-    justify-content: center;
-}
-.drop img{
-    width: 50px;
-    height: 30px;
-} */
+
 
 .sideinfo .map {
     /* border: 1px solid black; */
@@ -409,7 +400,6 @@ main {
 }
 /* Popup box */
 .popup{
-    /* z-index: 2; */
     background-color: #4dab6e;
     color: white;
     padding: 0px 20px 20px 10px;
@@ -438,14 +428,13 @@ main {
     cursor: pointer;
 }
 #cont1{
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 4/5;
+    grid-row: 2/3;
     justify-self: center;
     display: none;
 }
 .rent{
     height: 40px;
-    /* padding: 0px 9px; */
     display: flex;
     justify-content: space-between;
 }
@@ -458,7 +447,6 @@ main {
 .firstmonth{
     /* border: 1px solid black; */
     height: 40px;
-    /* padding: 0px 9px; */
     display: flex;
     justify-content: space-between;
 }
@@ -469,7 +457,10 @@ main {
     border-bottom: 1px solid rgba(0, 0, 0, 0.113);
 }
 #map{
+    grid-area: map;
     display: none;
+    max-width: 100rem;
+    max-height: 540px;
 }
 iframe{
     width: 99% ;
@@ -564,6 +555,7 @@ footer {
     padding: 10px;
     bottom: 0;
     width: 99svw;
+    z-index: 4;
 }
 
 footer p {
