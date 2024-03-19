@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 html {
     scroll-behavior: smooth;
 }
-
 :root {
     --secondary-color: white;
 }
@@ -135,6 +133,20 @@ header>#start {
     color: white;
 }
 
+#upwards{
+    border: none;
+    background-color: green;
+    border-radius: 8px;
+    position: fixed;
+    right: 100px;
+    bottom: 30px;
+    width: 50px;
+    height: 45px;
+}
+#upwards img{
+    width:40px;
+    height: 45px;
+}
 /* Flat Info Description */
 main {
     /* border: 1px solid black; */
@@ -450,7 +462,7 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.firstmonth h4, h3 , p{
+.firstmonth h4, .firstmonth h3 , .firstmonth p{
     align-self: center;
 }
 .month{
@@ -551,7 +563,7 @@ input{
 footer {
     background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
     color: white;
-    height: 255px;
+    height: 265px;
 }
 .foot{
     display: grid;
@@ -632,7 +644,7 @@ a:hover{
     font-weight: 10px;
     font-style: normal;
 }
-.info{
+.information{
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -654,14 +666,14 @@ a:hover{
 .copbut p{
     font-size: 15px;
 }
-.buttons{
+.foot-buttons{
     justify-self: flex-end;
     align-self: flex-start;
     margin-right: 170px;
     display: flex;
     gap: 20px;
 }
-.buttons button{
+.foot-buttons button{
     background-color: transparent;
     display: inline-flex;
 	justify-content: center;
@@ -671,17 +683,17 @@ a:hover{
     border-radius: 5px;
     transition: transform 100ms ease-in-out;
 }
-.buttons button:hover{
+.foot-buttons button:hover{
     background-color: green;
     transform: scale(1.1);
 }
-.buttons button img{
+.foot-buttons button img{
     border-radius: 50%;
     width: 40px;
     height: 40px;
     object-fit: contain;
 }
-button img:hover{
+.foot-button img:hover{
     filter: invert(100%);
 }
 /* Animations */

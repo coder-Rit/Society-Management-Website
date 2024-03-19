@@ -135,6 +135,21 @@ header> #start {
     color: #fff;
 }
 
+
+#upwards{
+    border: none;
+    background-color: green;
+    border-radius: 8px;
+    position: fixed;
+    right: 100px;
+    bottom: 30px;
+    width: 50px;
+    height: 45px;
+}
+#upwards img{
+    width:40px;
+    height: 45px;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -142,7 +157,6 @@ header> #start {
     height: 600px;
     margin: 50px;
 }
-
 .payment-box {  
     background: linear-gradient(34deg, #25a4c3, rgb(135 228 172));
     padding: 20px;
@@ -152,7 +166,6 @@ header> #start {
     width: 1000px;
     box-shadow: 0 7px 9px rgba(7, 0, 0, 0.6);
 }
-
 .payment-credentials {
     height: 509px;
     flex: 1;
@@ -161,7 +174,6 @@ header> #start {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
 .bank-details {
     height: 509px;
     flex: 1;
@@ -171,19 +183,15 @@ header> #start {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
-
 .payment-box h2 {
     margin-bottom: 20px;
 }
-
 .input-row input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 .input-row input[type="number"],
 .input-row input[type="text"] {
     width: calc(100% - 12px); 
@@ -192,8 +200,6 @@ header> #start {
 .input-row input[type="text"] {
     width: calc(100% - 16px); 
 }
-
-
 .my-button[type="submit"] {
     background-color: #4dab6e;
     color: white;
@@ -202,11 +208,8 @@ header> #start {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    
 }
-
 .my-button:hover{
-
     background-color: green;
 }
 .bank-details p {
@@ -218,7 +221,7 @@ header> #start {
 footer {
     background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
     color: white;
-    height: 255px;
+    height: 265px;
 }
 .foot{
     display: grid;

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --secondary-color:white;
 }
@@ -141,6 +144,21 @@ header> #start {
     color: white;
 }
 
+#upwards{
+    border: none;
+    background-color: green;
+    border-radius: 8px;
+    position: fixed;
+    right: 100px;
+    bottom: 30px;
+    width: 50px;
+    height: 45px;
+}
+#upwards img{
+    width:40px;
+    height: 45px;
+}   
+
 /* ____________________________________________________________________________________________-- */
 .wrapper {
   max-width: 75%;
@@ -207,7 +225,7 @@ header> #start {
 footer {
     background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
     color: white;
-    height: 255px;
+    height: 265px;
 }
 .foot{
     display: grid;
