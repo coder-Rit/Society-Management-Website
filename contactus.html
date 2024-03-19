@@ -54,12 +54,14 @@
         <div class="contact-container">
             <div class="contact-left">
                 <h2 class="getintouch">Get in Touch</h2>
-                <form action="connect.php" method="post">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="884069be-2e0a-4102-81cc-ccdf0e356469">
                     <label for="name">Name</label>
                     <input type="text" id="name" placeholder="Enter your Name" required name="name">
 
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="Enter your Phone Number" pattern="[0-9]{10}" required name phone>
+                    <input type="tel" id="phone" placeholder="Enter your Phone Number" pattern="[0-9]{10}" required name
+                        phone>
 
                     <label for="email">Email</label>
                     <input type="email" id="email" placeholder="Enter your Email" required name="email">
@@ -84,14 +86,15 @@
         </div>
     </main>
 
-    
+
     <h1 id="map">Locate Us</h1>
     <div class="map">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.6698262911736!2d74.00796753645965!3d18.58891843465503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c4a0745dd655%3A0x56669456b6a35005!2sHaveli%2C%20Maharashtra%20412207!5e0!3m2!1sen!2sin!4v1708790387214!5m2!1sen!2sin"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
     </div>
-    <button type="button" onclick="window.location.href='#header'" id="upwards"><img src="Feature images/uparrow.png" alt=""></button>
+    <button type="button" onclick="window.location.href='#header'" id="upwards"><img src="Feature images/uparrow.png"
+            alt=""></button>
 
 
     <footer>
