@@ -650,6 +650,10 @@ a:hover{
     flex-direction: column;
     gap: 18px;
 }
+#adr{
+    width: 480px;
+    word-wrap: break-word;
+}
 .copbut{
     padding: 0px 25px;
     height: 70px;

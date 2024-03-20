@@ -53,7 +53,7 @@
         <div class="backimg"></div>
         <div class="container" id="container">
             <div class="form-container sign-up-container">
-                <form action="#">
+                <form action="register.php" method="post">
                     <h1 id="signin">Create Account</h1>
                     <div class="social-container">
                         <a href="#" class="social"><img src="Feature images/facebook.png" alt="Facebook"></a>
@@ -61,14 +61,15 @@
                         <a href="#" class="social"><img src="Feature images/twitter.png" alt="Twitter"></a>
                     </div>
                     <span>or use your email for registration</span>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="text" id="name" placeholder="Name" required name="name"/>
+                    <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required name= 'phone' />
+                    <input type="email" class="email" placeholder="Email" required name="email"/>
+                    <input type="password" class="password" placeholder="Password" name="password"/>
                     <div class="flatinfo">
-                        <input type="number" id="flat" placeholder="Flat Number" />
-                        <input type="text" id="wing" placeholder="Wing" />
+                        <input type="number" id="flat" placeholder="Flat Number" name="flatnumber"/>
+                        <input type="text" id="wing" placeholder="Wing" name="wing"/>
                     </div>
-                    <select name="typeofuser" class="usertype">
+                    <select name="typeofuser" class="usertype" name="user">
                         <option value="Select">Select Type of User</option>
                         <option value="Tenant">Resident</option>
                         <option value="Committee Member">Committee Member</option>
@@ -86,8 +87,8 @@
                         <a href="#" class="social"><img src="Feature images/twitter.png" alt="Twitter"></a>
                     </div>
                     <span>or use your account</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="email" class="email" placeholder="Email" name="email"/>
+                    <input type="password" class="password" placeholder="Password" name="password"/>
                     <a href="#" class="fyg">Forgot your password?</a>
                     <button id="log" type="button">Log In</button>
                 </form>
@@ -139,7 +140,7 @@
                     <div class="info">
                         <p>Email : Dreamssankalp@gmail.com</p>
                         <p>Phone : +91 7745892255</p>
-                        <p>Address: Dream Sankalp BJS college, Bakori Rd, Pune, Maharashtra 412207</p>
+                        <p id="adr">Address: Dream Sankalp BJS college, Bakori Rd, Pune, Maharashtra 412207</p>
                     </div>
                 </div>
             </div>
