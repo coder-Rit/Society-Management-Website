@@ -16,8 +16,7 @@
             <img src="Background_images/Society Logo Main.jpeg" alt="">
             <h2 class="title">Dream Sankalp Co-op Society</h2>
         </div>
-        <button id="start" type="button" onclick="window.location.href='login.html'">Get Started
-        </button>
+        <button id="start" type="button" onclick="window.location.href='login.html'">Get Started</button>
     </header>
     <nav class="navigation">
         <a class="links" href="homepage.html">Home</a>
@@ -30,7 +29,7 @@
             </div>
         </div>
         <div class="dropdown-menu">
-            <button class="menu-btn" onclick="window.location.href='facility.html'">Facilities </button>
+            <button class="menu-btn" onclick="window.location.href='facility.html'">Facilities</button>
             <div class="menu-content">
                 <a class="links-hidden" href="/facility.html#parking">Parking</a>
                 <a class="links-hidden" href="/facility.html#security">Security</a>
@@ -48,6 +47,7 @@
         <a class="links" href="FAQ.html">FAQ</a>
         <a class="links" href="payment.html">Payment</a>
     </nav>
+
     <div class="container">
         <div class="payment-box">
             <div class="payment-credentials">
@@ -95,16 +95,23 @@
                 <br>
                 <p>Maintenance Fee: 500Rs</p>
 
-                <br><br>
+                <br>
 
-                <h9>Is it more convenient to pay by phone? Scan QR Code</h9>
-                <br><br>
-                <pre><img src = "https://th.bing.com/th/id/R.fabc43680e90008a253f8598820a5ff4?rik=adRCAq8CYwaRsg&riu=http%3a%2f%2fwww.emoderationskills.com%2fwp-content%2fuploads%2f2010%2f08%2fQR1.jpg&ehk=1jFEhvq4wSaLjTG66N22o2eMD5Lu5Cxq%2bw8x%2bGAzix8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="qrcode" width="100px" height="100px" >  </pre>
-            </div>
+                <h3>Upload the Screenshot of Payment here</h3>
+                
+                <div class="uploader">
+                    <input type="file" id="upload" accept="image/*" onchange="previewImage(event)">
+                    <label for="upload" class="upload-btn">Choose Image</label>
+                    <img id="preview" src="#" alt="Preview" />
+                   
+                </div>
+               
+            
+            </div> 
         </div>
     </div>
-    <button type="button" onclick="window.location.href='#header'" id="upwards"><img src="Feature images/uparrow.png" alt=""></button>
 
+    <button type="button" onclick="window.location.href='#header'" id="upwards"><img src="Feature images/uparrow.png" alt=""></button>
     <footer>
         <div class="foot">
             <div class="left-section">
@@ -151,6 +158,34 @@
             </div>
         </div>
     </footer>
+
+
+</body>
+
+  
+   
+    <script> 
+    
+        function previewImage(event) {
+        const preview = document.getElementById('preview');
+        const file = event.target.files[0];
+        const reader = new FileReader();
+    
+        reader.onloadend = function() {
+            preview.src = reader.result;
+            preview.style.display = 'block';
+        }
+    
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = '';
+            preview.style.display = 'none';
+        }
+    }
+    
+        
+        </script>
 </body>
 
 </html>
