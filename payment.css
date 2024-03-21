@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 html{
     scroll-behavior: smooth;
 }
@@ -9,16 +10,17 @@ html{
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
+
 
 /* Scroll Watcher */
 .scroll-watcher{
     height: 10px;
     position: fixed;
     top: 0;
-    z-index: 1000;
-   background: linear-gradient( 329deg, #25a4c3,rgb(19, 231, 104));
+    z-index: 2000;
+    background: linear-gradient( 329deg, #25a4c3,rgb(19, 231, 104));
     /* background-color: linear-gradient( rgb(89, 199, 229),blue); */
     width: 100%;
     /* scale: 0 1; */
@@ -27,6 +29,131 @@ html{
     animation-timeline: scroll();
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    width: 99dvw;
+    overflow-x: clip;
+}
+
+/* Navigation Section */
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+}
+header {
+    background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+	z-index: 100;
+}
+header .title{
+    font-size: 27px;
+    font-weight: 800;
+    word-wrap:break-word;
+    width: 250px;
+    margin-left: 15px;
+}
+header>#start {
+    border: 2px solid white;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    height: 55px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    /* transition: all 0.4s; */
+    font-family: 'Poppins', sans-serif;
+}
+#start:hover {
+    background-color: white;
+    color: green;
+    box-shadow: 5px 8px 10px 2px rgba(0, 0, 0, 0.25);
+    border: 2px solid green;
+    
+}
+.menu-btn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+}
+.navigation {
+    background-color: White;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
+}
+.links,
+.links-hidden {
+    display: inline-block;
+    color:black;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.links-hidden {
+    display: block;
+}
+.links {
+    font-size: 18px;
+    display: inline-block;
+}
+.links-hidden:hover,
+.links:hover {
+    background-color: #4dab6e;
+    color: white;
+}
+.dropdown-menu:hover .menu-content {
+    display: block;
+}
+.dropdown-menu:hover .menu-btn {
+    background-color: #4dab6e;
+    color: white;
+}
+
+
+#upwards{
+    border: 2px solid white;
+    background-color: green;
+    border-radius: 8px;
+    position: fixed;
+    right: 100px;
+    bottom: 30px;
+    width: 50px;
+    height: 45px;
+}
+#upwards img{
+    width:40px;
+    height: 45px;
+    filter: invert(100%);
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -130,27 +257,11 @@ header> #start {
 .dropdown-menu:hover .menu-btn {
     background-color:  #4dab6e;
     color: white;
-}
+}                                        
 .mainh {
-    color: #fff;
+    color: #fff;           
 }
 
-
-#upwards{
-    border: 2px solid white;
-    background-color: green;
-    border-radius: 8px;
-    position: fixed;
-    right: 100px;
-    bottom: 30px;
-    width: 50px;
-    height: 45px;
-}
-#upwards img{
-    width:40px;
-    height: 45px;
-    filter: invert(100%);
-}
 .container {
     display: flex;
     justify-content: center;
@@ -158,14 +269,25 @@ header> #start {
     height: 600px;
     margin: 50px;
 }
-.payment-box {  
-    background: linear-gradient(34deg, #25a4c3, rgb(135 228 172));
+
+.payment-box  {          
+    /* background: linear-gradient(34deg, #18aed3, rgb(15, 197, 88)); */
+    animation: colorChange 2s linear infinite alternate;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     height: 550px;
     width: 1000px;
     box-shadow: 0 7px 9px rgba(7, 0, 0, 0.6);
+}
+@keyframes colorChange {
+    50% {
+        background: rgb(6, 238, 199);
+    }
+    
+    100% {
+        background: rgb(23, 235, 41);
+}
 }
 .payment-credentials {
     height: 509px;
@@ -175,6 +297,7 @@ header> #start {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
 .bank-details {
     height: 509px;
     flex: 1;
@@ -184,15 +307,19 @@ header> #start {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+
 .payment-box h2 {
     margin-bottom: 20px;
 }
+
 .input-row input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .input-row input[type="number"],
 .input-row input[type="text"] {
     width: calc(100% - 12px); 
@@ -201,6 +328,8 @@ header> #start {
 .input-row input[type="text"] {
     width: calc(100% - 16px); 
 }
+
+
 .my-button[type="submit"] {
     background-color: #4dab6e;
     color: white;
@@ -209,16 +338,44 @@ header> #start {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    
 }
+
 .my-button:hover{
+
     background-color: green;
 }
 .bank-details p {
     margin: 5px 0;
 }
 
+.uploader {
+    position: relative;
+    width: 200px;
+    margin: 50px auto;
+}
 
-/* Footer */
+.upload-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#upload {
+    display: none;
+}
+
+#preview {
+    display: none;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+
+
 footer {
     background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
     color: white;
@@ -231,7 +388,7 @@ footer {
 .footer-content {
     grid-area: foot2;
     padding: 15px 0px 15px 0px;
-    height: 160px;
+    height: 190px;
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
@@ -364,4 +521,19 @@ button img:hover{
 @keyframes scroll-watcher{
     from{scale: 0 1;}
     to {scale: 1 1; }
+}
+
+@keyframes show {
+
+	0%,
+	49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+
+	50%,
+	100% {
+		opacity: 1;
+		z-index: 5;
+	}
 }
