@@ -71,15 +71,15 @@
                     </div>
                     <select name="typeofuser" class="usertype">
                         <option value="Select" selected>Select Type of User</option>
-                        <option value="Tenant">Resident</option>
+                        <option value="Tenant">Tenant</option>
                         <option value="Committee Member">Committee Member</option>
-                        <option value="Committee Member">Society Manager</option>
+                        <option value="Society Manager">Society Manager</option>
                     </select>
                     <button id="sign" type="submit" name="submit">Sign Up</button>
                 </form>
             </div>
             <div class="form-container sign-in-container">
-                <form action="#">
+                <form action="login.php" method="post">
                     <h1 id="login">Log In</h1>
                     <div class="social-container">
                         <a href="#" class="social"><img src="Feature images/facebook.png" alt="Facebook"></a>
@@ -90,7 +90,7 @@
                     <input type="email" class="email" placeholder="Email" name="email"/>
                     <input type="password" class="password" placeholder="Password" name="password"/>
                     <a href="#" class="fyg">Forgot your password?</a>
-                    <button id="log" type="button">Log In</button>
+                    <button id="log" type="submit" name="login">Log In</button>
                 </form>
             </div>
             <div class="overlay-container">
