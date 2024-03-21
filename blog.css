@@ -158,104 +158,48 @@ header #start {
    height: 45px;
    filter: invert(100%);
 }
-/* Blog Section */
-.h2 {
-   color: rgb(253, 246, 246);
-}
 
-h3 {
-   color: #f7f1f1;
-}
 
-input[type] {
-   display: inline-block;
-   padding: 122px 200px;
-}
-
-.mainh {
-   color: #fff;
-}
-aside{
-   display: flex;
-   flex-direction: column;
-   gap: 40px;
-}
-.main {
-   display: flex;
-   justify-content: space-between;
-   gap: 30px;
-   margin: 29px 72px;
-   /* border: 2px solid black; */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #fff;
 }
 
 .container {
-   /* border: 1px solid black; */
-   display: flex;
-   flex-direction: column;
-   width: 200%;
-   flex-grow: 5;
-   flex-basis: 1500px;
-}
-
-.sidebar {
-   font-size: 20px;
-   padding-right: 25px;
-   font-family: 'Poppins', sans-serif;
-}
-
-main {
-   max-width: 700px;
-   margin: 30px;
+   max-width: 950px;
+   margin: 50px auto;
    padding: 20px;
    background-color: rgb(139, 217, 156);
-   box-shadow: 19px 15px 13px rgb(12, 12, 12, 0.1)
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-article {
+.notice {
+   text-align: center;
+}
+
+.notice h1 {
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.notice-item {
    margin-bottom: 30px;
 }
 
-article h2 {
+.notice-item img {
+   width: 750px; /* Adjust image width as needed */
+   height: 350px;
+   display: block;
+   margin: 0 auto 10px; /* Center image */
+}
+
+.notice p {
+   color: #666;
+   line-height: 1.6;
    margin-bottom: 10px;
-}
-
-article p {
-   line-height: 2.8;
-}
-
-textarea {
-   resize: none;
-   height: 400px;
-}
-
-.btton {
-   border: 2px solid white;
-   padding: 10px;
-   font-size: 15px;
-   width: 100px;
-   background-color: green;
-   color: white;
-   border-radius: 7px;
-   cursor: pointer;
-}
-
-.btton:hover {
-   background-color: rgb(247, 240, 240);
-   color: green;
-   border: 2px solid green;
-   box-shadow: 9px 5px 3px rgb(3, 3, 3, 0.2);
-}
-
-#selectCategory {
-   width: 380px;
-}
-
-.ctg {
-   font-family: 'Poppins', sans-serif;
-}
-
-#selectCategory {
-   height: 35px;
 }
 
 /* Footer */
