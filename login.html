@@ -62,20 +62,20 @@
                     </div>
                     <span>or use your email for registration</span>
                     <input type="text" id="name" placeholder="Name" required name="name"/>
-                    <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required name= 'phone' />
+                    <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required name="phone" />
                     <input type="email" class="email" placeholder="Email" required name="email"/>
                     <input type="password" class="password" placeholder="Password" name="password"/>
                     <div class="flatinfo">
                         <input type="number" id="flat" placeholder="Flat Number" name="flatnumber"/>
                         <input type="text" id="wing" placeholder="Wing" name="wing"/>
                     </div>
-                    <select name="typeofuser" class="usertype" name="user">
-                        <option value="Select">Select Type of User</option>
+                    <select name="typeofuser" class="usertype">
+                        <option value="Select" selected>Select Type of User</option>
                         <option value="Tenant">Resident</option>
                         <option value="Committee Member">Committee Member</option>
                         <option value="Committee Member">Society Manager</option>
                     </select>
-                    <button id="sign" type="button">Sign Up</button>
+                    <button id="sign" type="submit" name="submit">Sign Up</button>
                 </form>
             </div>
             <div class="form-container sign-in-container">
