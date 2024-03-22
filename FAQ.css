@@ -221,6 +221,29 @@ header> #start {
   border: none;
 }
 
+/* ------------------------------Search Box------------------------------ */
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.search input[type=text]{
+    width: 50svw;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid #52CC7C;
+    font-size: 20px;
+}
+.search button{
+    background-color: #52CC7C;
+    border: 1px solid white;
+    height: 2rem;
+}
+.search button:hover{
+    opacity: 0.7;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxx    Search Box   xxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* Footer */
 footer {
