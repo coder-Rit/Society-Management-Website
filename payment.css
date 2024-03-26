@@ -281,7 +281,7 @@ header> #start {
     box-shadow: 0 7px 9px rgba(7, 0, 0, 0.6);
 }
 @keyframes colorChange {
-    50% {
+    0% {
         background: rgb(6, 238, 199);
     }
     

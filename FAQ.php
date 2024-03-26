@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION["user"])){
+    header("Location: login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,43 +20,43 @@
 </head>
 
 <body>
-  
+
   <div class="scroll-watcher"></div>
   <header id="header">
     <div class="logo">
       <img src="Background_images/Society Logo Main.jpeg" alt="">
       <h2 class="title">Dream Sankalp Co-op Society</h2>
     </div>
-    <button id="start" type="button" onclick="window.location.href='login.html'">Get Started</button>
+    <button id="start" type="button" onclick="window.location.href='login.php'">Get Started</button>
   </header>
   <nav class="navigation">
-    <a class="links" href="homepage.html">Home</a>
+    <a class="links" href="homepage.php">Home</a>
     <div class="dropdown-menu">
-      <button class="menu-btn" onclick="window.location.href= 'AboutUs.html'">About Us </button>
+      <button class="menu-btn" onclick="window.location.href= 'AboutUs.php'">About Us </button>
       <div class="menu-content">
-        <a class="links-hidden" href="committee.html">Committee</a>
-        <a class="links-hidden" href="gallery.html">Gallery</a>
-        <a class="links-hidden" href="flatinfo.html">Flat Info</a>
+        <a class="links-hidden" href="committee.php">Committee</a>
+        <a class="links-hidden" href="gallery.php">Gallery</a>
+        <a class="links-hidden" href="flatinfo.php">Flat Info</a>
       </div>
     </div>
     <div class="dropdown-menu">
-      <button class="menu-btn" onclick="window.location.href='facility.html'">Facilities </button>
+      <button class="menu-btn" onclick="window.location.href='facility.php'">Facilities </button>
       <div class="menu-content">
-        <a class="links-hidden" href="/facility.html#parking">Parking</a>
-        <a class="links-hidden" href="/facility.html#security">Security</a>
-        <a class="links-hidden" href="/facility.html#power">Power Backup</a>
-        <a class="links-hidden" href="/facility.html#gym">Clubhouse</a>
-        <a class="links-hidden" href="/facility.html#water">Water Supply</a>
-        <a class="links-hidden" href="/facility.html#garden">Garden Surroundings</a>
-        <a class="links-hidden" href="/facility.html#kids">Kids Entertainment</a>
-        <a class="links-hidden" href="/facility.html#maintain">Maintenance</a>
-        <a class="links-hidden" href="/facility.html#cleaning">Housekeeping</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#security">Security</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#parking">Parking</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#power">Power Backup</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#gym">Clubhouse</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#water">Water Supply</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#garden">Garden Surroundings</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#kids">Kids Entertainment</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#maintain">Maintenance</a>
+        <a class="links-hidden" href="/Society Management Website/facility.php#cleaning">Housekeeping</a>
       </div>
     </div>
-    <a class="links" href="blog.html">Circulars</a>
-    <a class="links" href="contactus.html">Contact</a>
-    <a class="links" href="FAQ.html">FAQ</a>
-    <a class="links" href="payment.html">Payment</a>
+    <a class="links" href="blog.php">Circulars</a>
+    <a class="links" href="contactus.php">Contact</a>
+    <a class="links" href="FAQ.php">FAQ</a>
+    <a class="links" href="payment.php">Payment</a>
   </nav>
   <div class="wrapper">
     <p>The Begninning of a New Asset class</p>
@@ -57,9 +64,9 @@
     <div class="search">
       <input type="text" placeholder="Search Here!!!" name="search" />
       <button type="submit">
-          <img src="Background_images/search.png" alt="">
+        <img src="Background_images/search.png" alt="">
       </button>
-  </div>
+    </div>
     <div class="faq">
       <button class="accordion">
         How to pay maintainence?
@@ -156,53 +163,54 @@
     }
   </script>
 
-  <button type="button" onclick="window.location.href='#header'" id="upwards"><img src="Feature images/uparrow.png" alt=""></button>
+  <button type="button" onclick="window.location.href='#header'" id="upwards"><img src="Feature images/uparrow.png"
+      alt=""></button>
   <footer>
     <div class="foot">
-        <div class="left-section">
-            <img src="Background_images/Dream Sankalp Co-op Society Logo.jpeg" alt="Footer Logo">
-            <h1 class="heading1">Dream Sankalp Co-op Society</h1>
+      <div class="left-section">
+        <img src="Background_images/Dream Sankalp Co-op Society Logo.jpeg" alt="Footer Logo">
+        <h1 class="heading1">Dream Sankalp Co-op Society</h1>
+      </div>
+      <div class="footer-content">
+        <div class="useful-links">
+          <h2>Useful Links</h2>
+          <ul>
+            <li><a href="homepage.php">Home</a></li>
+            <li><a href="AboutUs.php">AboutUs</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+          </ul>
         </div>
-        <div class="footer-content">
-            <div class="useful-links">
-                <h2>Useful Links</h2>
-                <ul>
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="AboutUs.html">AboutUs</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
-            <div class="facility-links">
-                <h2>Our Facilities</h2>
-                <ul>
-                    <li><a href="/facility.html#parking">Parking</a></li>
-                    <li><a href="/facility.html#security">Security</a></li>
-                    <li><a href="/facility.html#gym">Clubhouse</a></li>
-                    <li><a href="/facility.html#maintain">Maintenance</a></li>
-                    <li><a href="/facility.html#cleaning">Housekeeping</a></li>
-                    <li><a href="/facility.html#water">Water Supply</a></li>
-                </ul>
-            </div>
-            <div class="address">
-                <div class="info">
-                    <p>Email : Dreamssankalp@gmail.com</p>
-                    <p>Phone : +91 7745892255</p>
-                    <p id="adr">Address: Dream Sankalp BJS college, Bakori Rd, Pune, Maharashtra 412207</p>
-                </div>
-            </div>
+        <div class="facility-links">
+          <h2>Our Facilities</h2>
+          <ul>
+            <li><a href="/Society Management Website/facility.php#parking">Parking</a></li>
+            <li><a href="/Society Management Website/facility.php#security">Security</a></li>
+            <li><a href="/Society Management Website/facility.php#gym">Clubhouse</a></li>
+            <li><a href="/Society Management Website/facility.php#maintain">Maintenance</a></li>
+            <li><a href="/Society Management Website/facility.php#cleaning">Housekeeping</a></li>
+            <li><a href="/Society Management Website/facility.php#water">Water Supply</a></li>
+          </ul>
         </div>
+        <div class="address">
+          <div class="info">
+            <p>Email : Dreamssankalp@gmail.com</p>
+            <p>Phone : +91 7745892255</p>
+            <p id="adr">Address: Dream Sankalp BJS college, Bakori Rd, Pune, Maharashtra 412207</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="copbut">
-        <div class="copyright">
-            <p>&copy; 2024 Fourise Software Solutions Pvt. Ltd.</p>
-        </div>
-        <div class="buttons">
-            <button type="button"><img src="Feature images/instagram.png" alt=""></button>
-            <button type="button"><img src="Feature images/facebook.png" alt=""></button>
-            <button type="button"><img src="Feature images/twitter.png" alt=""></button>
-        </div>
+      <div class="copyright">
+        <p>&copy; 2024 Fourise Software Solutions Pvt. Ltd.</p>
+      </div>
+      <div class="buttons">
+        <button type="button"><img src="Feature images/instagram.png" alt=""></button>
+        <button type="button"><img src="Feature images/facebook.png" alt=""></button>
+        <button type="button"><img src="Feature images/twitter.png" alt=""></button>
+      </div>
     </div>
-</footer>
+  </footer>
 </body>
 
 </html>

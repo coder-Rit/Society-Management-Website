@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION["user"])){
+    header("Location: login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,37 +23,37 @@
             <img src="Background_images/Society Logo Main.jpeg" alt="">
             <h2 class="title">Dream Sankalp Co-op Society</h2>
         </div>
-        <button id="start" type="button" onclick="window.location.href='login.html'">Get Started
+        <button id="start" type="button" onclick="window.location.href='login.php'">Get Started
         </button>
     </header>
     <nav class="navigation">
-        <a class="links" href="homepage.html">Home</a>
+        <a class="links" href="homepage.php">Home</a>
         <div class="dropdown-menu">
-            <button class="menu-btn" onclick="window.location.href= 'AboutUs.html'">About Us </button>
+            <button class="menu-btn" onclick="window.location.href= 'AboutUs.php'">About Us </button>
             <div class="menu-content">
-                <a class="links-hidden" href="committee.html">Committee</a>
-                <a class="links-hidden" href="gallery.html">Gallery</a>
-                <a class="links-hidden" href="flatinfo.html">Flat Info</a>
+                <a class="links-hidden" href="committee.php">Committee</a>
+                <a class="links-hidden" href="gallery.php">Gallery</a>
+                <a class="links-hidden" href="flatinfo.php">Flat Info</a>
             </div>
         </div>
         <div class="dropdown-menu">
-            <button class="menu-btn" onclick="window.location.href='facility.html'">Facilities </button>
+            <button class="menu-btn" onclick="window.location.href='facility.php'">Facilities </button>
             <div class="menu-content">
-                <a class="links-hidden" href="#parking">Parking</a>
-                <a class="links-hidden" href="#security">Security</a>
-                <a class="links-hidden" href="#power">Power Backup</a>
-                <a class="links-hidden" href="#gym">Clubhouse</a>
-                <a class="links-hidden" href="#water">Water Supply</a>
-                <a class="links-hidden" href="#garden">Garden Surroundings</a>
-                <a class="links-hidden" href="#kids">Kids Entertainment</a>
-                <a class="links-hidden" href="#maintain">Maintenance</a>
-                <a class="links-hidden" href="#cleaning">Housekeeping</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#security">Security</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#parking">Parking</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#power">Power Backup</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#gym">Clubhouse</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#water">Water Supply</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#garden">Garden Surroundings</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#kids">Kids Entertainment</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#maintain">Maintenance</a>
+                <a class="links-hidden" href="/Society Management Website/facility.php#cleaning">Housekeeping</a>
             </div>
         </div>
-        <a class="links" href="blog.html">Circulars</a>
-        <a class="links" href="contactus.html">Contact</a>
-        <a class="links" href="FAQ.html">FAQ</a>
-        <a class="links" href="payment.html">Payment</a>
+        <a class="links" href="blog.php">Circulars</a>
+        <a class="links" href="contactus.php">Contact</a>
+        <a class="links" href="FAQ.php">FAQ</a>
+        <a class="links" href="payment.php">Payment</a>
     </nav>
 
     <main class="features">
@@ -154,20 +161,20 @@
                 <div class="useful-links">
                     <h2>Useful Links</h2>
                     <ul>
-                        <li><a href="homepage.html">Home</a></li>
-                        <li><a href="AboutUs.html">AboutUs</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="homepage.php">Home</a></li>
+                        <li><a href="AboutUs.php">AboutUs</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="facility-links">
                     <h2>Our Facilities</h2>
                     <ul>
-                        <li><a href="#parking">Parking</a></li>
-                        <li><a href="#security">Security</a></li>
-                        <li><a href="#gym">Clubhouse</a></li>
-                        <li><a href="#maintain">Maintenance</a></li>
-                        <li><a href="#cleaning">Housekeeping</a></li>
-                        <li><a href="#water">Water Supply</a></li>
+                        <li><a href="/Society Management Website/facility.php#parking">Parking</a></li>
+                        <li><a href="/Society Management Website/facility.php#security">Security</a></li>
+                        <li><a href="/Society Management Website/facility.php#gym">Clubhouse</a></li>
+                        <li><a href="/Society Management Website/facility.php#maintain">Maintenance</a></li>
+                        <li><a href="/Society Management Website/facility.php#cleaning">Housekeeping</a></li>
+                        <li><a href="/Society Management Website/facility.php#water">Water Supply</a></li>
                     </ul>
                 </div>
                 <div class="address">
