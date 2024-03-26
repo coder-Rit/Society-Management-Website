@@ -11,7 +11,7 @@ if (isset($_POST["login"])){
         if(password_verify($password, $user["password"])){
             session_start();
             $_SESSION["user"] = "yes";
-            header("Location: homepage.php");
+            header("Location: homepage.html");
             die();
         }else{
             echo "<div class='alert alert-danger'>Password does not match</div>";
