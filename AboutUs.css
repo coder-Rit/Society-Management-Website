@@ -378,7 +378,7 @@ h1 {
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 .carousel-button:hover,
@@ -402,7 +402,7 @@ h1 {
 }
 
 .carousel-button.next {
-    right: 2.9rem;
+    right: 2rem;
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxx Carousel-End xxxxxxxxxxxxxxxxxxxxxxxxx  */
