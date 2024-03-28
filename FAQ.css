@@ -393,3 +393,15 @@ button img:hover{
     from{scale: 0 1;}
     to {scale: 1 1; }
 }
+
+/* TextArea */
+.textarea{
+    display: flex;
+    /* padding: ; */
+    align-items: center;
+    justify-content: center;
+}
+textarea{
+    width: 409px;
+    height: 344px;
+}
