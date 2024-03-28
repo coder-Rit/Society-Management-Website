@@ -59,7 +59,7 @@ header .title{
     width: 250px;
     margin-left: 15px;
 }
-header #start {
+header> #start {
     border: 2px solid white;
     padding: 10px;
     background-color: green;
@@ -96,7 +96,6 @@ header #start {
     min-width: 150px;
     z-index: 1; 
 }
-
 .navigation {
     background-color: White;
     display: flex;
@@ -119,19 +118,22 @@ header #start {
     font-size: 18px;
     display: inline-block;
 }
+.active{
+    background-color: #4dab6e;
+    color: white;
+}
 .links-hidden:hover,
 .links:hover {
-    background-color: #4dab6e;
+    background-color:  #4dab6e;
     color: white;
 }
 .dropdown-menu:hover .menu-content {
     display: block;
 }
 .dropdown-menu:hover .menu-btn {
-    background-color: #4dab6e;
+    background-color:  #4dab6e;
     color: white;
 }
-
 #upwards{
     border: 2px solid white;
     background-color: green;

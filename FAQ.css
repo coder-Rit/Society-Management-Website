@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-html{
+
+html {
     scroll-behavior: smooth;
 }
-:root{
-    --secondary-color:white;
+
+:root {
+    --secondary-color: white;
 }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Scroll Watcher */
-.scroll-watcher{
+.scroll-watcher {
     height: 10px;
     position: fixed;
     top: 0;
     z-index: 1000;
     /* background-image: linear-gradient( 329deg, rgb(89, 199, 229),blue); */
-    background: linear-gradient( 329deg, #25a4c3,rgb(19, 231, 104));
+    background: linear-gradient(329deg, #25a4c3, rgb(19, 231, 104));
     width: 100%;
     /* scale: 0 1; */
     transform-origin: left;
@@ -34,13 +38,16 @@ body {
     width: auto;
     overflow-x: clip;
 }
-.logo{
+
+.logo {
     display: flex;
 }
-.logo img{
+
+.logo img {
     width: 90px;
     height: 90px;
 }
+
 header {
     background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
     color: white;
@@ -49,15 +56,16 @@ header {
     align-items: center;
     padding: 15px;
 }
-header .title{
+
+header .title {
     font-size: 27px;
     font-weight: 800;
-    word-wrap:break-word;
+    word-wrap: break-word;
     width: 250px;
     margin-left: 15px;
 }
 
-header> #start {
+header>#start {
     border: 2px solid white;
     padding: 10px;
     background-color: green;
@@ -69,7 +77,7 @@ header> #start {
     font-weight: bold;
 }
 
-#start:hover{
+#start:hover {
     background-color: white;
     color: green;
     box-shadow: 5px 8px 10px 2px rgba(0, 0, 0, 0.25);
@@ -98,7 +106,7 @@ header> #start {
     position: absolute;
     background-color: white;
     min-width: 160px;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .navigation {
@@ -129,9 +137,14 @@ header> #start {
     display: inline-block;
 }
 
+.active {
+    background-color: #4dab6e;
+    color: white;
+}
+
 .links-hidden:hover,
 .links:hover {
-    background-color:  #4dab6e;
+    background-color: #4dab6e;
     color: white;
 }
 
@@ -140,11 +153,11 @@ header> #start {
 }
 
 .dropdown-menu:hover .menu-btn {
-    background-color:  #4dab6e;
+    background-color: #4dab6e;
     color: white;
 }
 
-#upwards{
+#upwards {
     border: 2px solid white;
     background-color: green;
     border-radius: 8px;
@@ -154,95 +167,103 @@ header> #start {
     width: 50px;
     height: 45px;
 }
-#upwards img{
-    width:40px;
+
+#upwards img {
+    width: 40px;
     height: 45px;
     filter: invert(100%);
-} 
+}
 
 /* ____________________________________________________________________________________________-- */
 .wrapper {
-  max-width: 75%;
-  margin: auto;
+    max-width: 75%;
+    margin: auto;
 }
 
-.wrapper > p,
-.wrapper > h1 {
-  margin: 1.5rem 0;
-  text-align: center;
+.wrapper>p,
+.wrapper>h1 {
+    margin: 1.5rem 0;
+    text-align: center;
 }
 
-.wrapper > h1 {
-  letter-spacing: 3px;
+.wrapper>h1 {
+    letter-spacing: 3px;
 }
 
 .accordion {
-  background-color: white;
-  color: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  font-size: 1.2rem;
-  width: 100%;
-  padding: 2rem 2.5rem;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
 }
 
 .accordion i {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 
 .accordion:hover {
-  background-color: #b3b6b5;
+    background-color: #b3b6b5;
 }
+
 .pannel {
-  padding: 0 2rem 2.5rem 2rem;
-  background-color: white;
-  overflow: hidden;
-  background-color: #f1f7f5;
-  display: none;
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
 }
+
 .pannel p {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1.2rem;
-  line-height: 1.4;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
 
 .faq {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
 }
+
 .faq.active {
-  border: none;
+    border: none;
 }
 
 /* ------------------------------Search Box------------------------------ */
-.search{
+.search {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.search input[type=text]{
+
+.search input[type=text] {
     width: 50svw;
     height: 2rem;
     text-align: center;
     border: 1px solid #52CC7C;
     font-size: 20px;
 }
-.search button{
+
+.search button {
     background-color: #52CC7C;
     border: 1px solid white;
     height: 2rem;
 }
-.search button:hover{
+
+.search button:hover {
     opacity: 0.7;
 }
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxx    Search Box   xxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* Footer */
@@ -251,10 +272,12 @@ footer {
     color: white;
     height: 265px;
 }
-.foot{
+
+.foot {
     display: grid;
     grid-template-areas: "foot1 foot2 foot2";
 }
+
 .footer-content {
     grid-area: foot2;
     padding: 15px 0px 15px 0px;
@@ -263,20 +286,23 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-.left-section{
+
+.left-section {
     grid-area: foot1;
     height: 190px;
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
-.left-section img{
+
+.left-section img {
     align-self: center;
     width: 100px;
     height: 100px;
 }
-.left-section .heading1{
+
+.left-section .heading1 {
     align-self: center;
     height: 100px;
     /* border: 1px solid black; */
@@ -285,19 +311,24 @@ footer {
     width: 280px;
     margin-left: 15px;
 }
- a {
+
+a {
     text-decoration: none;
     color: #ffffff8a;
 }
-a:hover{
+
+a:hover {
     color: #fff;
 }
-.useful-links h2, .facility-links h2{
+
+.useful-links h2,
+.facility-links h2 {
     padding-bottom: 6px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     border-bottom: 3px solid green;
-} 
-.useful-links ul{
+}
+
+.useful-links ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -307,21 +338,23 @@ a:hover{
     font-family: "Poppins", sans-serif;
     font-weight: 10px;
     font-style: normal;
-    color: rgb(246, 249, 252);  
+    color: rgb(246, 249, 252);
     gap: 14px;
 }
-.facility-links ul{
+
+.facility-links ul {
     list-style: none;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     /* border: 1px solid black; */
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: flex-start;
     gap: 14px 28px;
 
 }
+
 .address {
     /* border: 1px solid black; */
     align-self: flex-end;
@@ -330,66 +363,82 @@ a:hover{
     font-weight: 10px;
     font-style: normal;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
-#adr{
+
+#adr {
     width: 480px;
     word-wrap: break-word;
 }
-.copbut{
+
+.copbut {
     padding: 0px 25px;
     height: 70px;
     /* background-color: rgb(191, 228, 135); */
     display: grid;
     grid-template-areas: "footer";
 }
-.copbut>*{
+
+.copbut>* {
     grid-area: footer;
 }
-.copbut .copyright{
+
+.copbut .copyright {
     justify-self: flex-start;
     align-self: center;
 }
-.copbut p{
+
+.copbut p {
     font-size: 15px;
 }
-.buttons{
+
+.buttons {
     justify-self: flex-end;
     align-self: flex-start;
     margin-right: 170px;
     display: flex;
     gap: 20px;
 }
-.buttons button{
+
+.buttons button {
     background-color: transparent;
     display: inline-flex;
-	justify-content: center;
-	align-items: center;
-    width:  40px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
     border: none;
     border-radius: 5px;
     transition: transform 100ms ease-in-out;
 }
-.buttons button:hover{
+
+.buttons button:hover {
     background-color: green;
     transform: scale(1.1);
 }
-.buttons button img{
+
+.buttons button img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
     object-fit: contain;
 }
-button img:hover{
+
+button img:hover {
     filter: invert(100%);
 }
 
 
 /* Animations */
-@keyframes scroll-watcher{
-    from{scale: 0 1;}
-    to {scale: 1 1; }
+@keyframes scroll-watcher {
+    from {
+        scale: 0 1;
+    }
+
+    to {
+        scale: 1 1;
+    }
 }

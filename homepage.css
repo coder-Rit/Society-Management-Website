@@ -120,6 +120,10 @@ header> #start {
     font-size: 18px;
     display: inline-block;
 }
+.active{
+    background-color: #4dab6e;
+    color: white;
+}
 .links-hidden:hover,
 .links:hover {
     background-color: #4dab6e;
