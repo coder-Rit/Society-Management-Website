@@ -397,11 +397,37 @@ button img:hover{
 /* TextArea */
 .textarea{
     display: flex;
-    /* padding: ; */
-    align-items: center;
+    padding: 2rem 4rem 2rem 0;
+    /* align-items: center; */
     justify-content: center;
 }
 textarea{
     width: 409px;
     height: 344px;
+    position: relative;
+    left: 1%;
+}
+#start {
+    border: 2px solid white;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 55px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#start:hover{
+    background-color: white;
+    color: green;
+    box-shadow: 5px 8px 10px 2px rgba(0, 0, 0, 0.25);
+    border: 2px solid green;
+}
+
+.sub-btn{
+    position: relative;
+    left: 50%;
+    padding-bottom:30px;
 }
