@@ -451,8 +451,8 @@ button img:hover {
     justify-content: center;
 }
 textarea{
-    width: 409px;
-    height: 344px;
+    width: 722px;
+    height: 129px;
     position: relative;
     left: 1%;
 }
@@ -465,6 +465,10 @@ textarea{
     cursor: pointer;
     height: 55px;
     font-size: 17px;
+    font-weight: bold;
+}
+
+.queryenter{
     font-weight: bold;
 }
 
