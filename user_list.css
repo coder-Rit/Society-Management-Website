@@ -2,16 +2,45 @@
     margin: 0;
     padding: 0;
 }
-.table{
-    border: 1px solid black;
+body{
     display: flex;
+}
+nav{
+    height: 100svh;
+    width: 15svw;
+    background-color: lightgreen    ;
+}
+
+.container{
+    width: 85svw;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+.dash{
+    border: 1px solid black;
+    height: 60svh;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    height: 80svh;
+    flex-wrap: wrap;
+}
+.dash .box{
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+}
+table{
+    margin: 30px;
 }
 table, th,td{
-    border: 1px solid black;
-    padding: 10px;
+    border-collapse: collapse;
+    border: 1px solid rgba(105, 101, 101, 0.403);
+    padding: 5px;
+}
+tr td input[type=text]{
+    border: none;
 }
 button{
     border: none;
