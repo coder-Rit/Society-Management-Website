@@ -154,16 +154,16 @@ header>#start {
 }
 /* Flat Info Description */
 main {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 99svw;
-    height: 70%;
+    height: 150svh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
     align-items: center;
     gap: 50px;
-    padding: 38px 0px 55px 0px;
+    margin: 38px 0px 55px 0px;
 }
 .features{
     width: 89svw;
@@ -702,7 +702,7 @@ a:hover{
     height: 40px;
     object-fit: contain;
 }
-.foot-button img:hover{
+.foot-buttons img:hover{
     filter: invert(100%);
 }
 /* Animations */
