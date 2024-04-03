@@ -6,23 +6,26 @@ body{
     display: flex;
 }
 nav{
-    height: 100svh;
+    height: 120svh;
     width: 15svw;
     background-color: lightgreen    ;
 }
-
+h1{
+    margin: 30px 0px 0px 40px;
+}
 .container{
     width: 85svw;
-    height: 100svh;
+    height: 120svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .dash{
     border: 1px solid black;
-    height: 60svh;
+    height: 70svh;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -31,8 +34,11 @@ nav{
     width: 400px;
     height: 200px;
 }
-table{
-    margin: 30px;
+.table{
+    height: 60svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 table, th,td{
     border-collapse: collapse;
@@ -54,6 +60,10 @@ button img{
 button:hover{
     transform: scale(1.1);
 }
+/* .stats{
+    display: flex;
+    justify-content: center;
+} */
 .status{
     border-radius: 10px;
     width: 50px;
