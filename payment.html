@@ -99,13 +99,14 @@
 
                 <h3>Upload the Screenshot of Payment here</h3>
                 
-                <div class="uploader">
-                    <input type="file" id="upload" accept="image/*" onchange="previewImage(event)">
-                    <label for="upload" class="upload-btn">Choose Image</label>
-                    <img id="preview" src="#" alt="Preview" />
-                   
-                </div>
                
+                <br>
+                <br>
+                
+                <div class="form-group">
+                    <label for="image"></label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div> 
             
             </div> 
         </div>
@@ -164,25 +165,7 @@
 
   
    
-    <script> 
-    
-        function previewImage(event) {
-        const preview = document.getElementById('preview');
-        const file = event.target.files[0];
-        const reader = new FileReader();
-    
-        reader.onloadend = function() {
-            preview.src = reader.result;
-            preview.style.display = 'block';
-        }
-    
-        if (file) {
-            reader.readAsDataURL(file);
-        } else {
-            preview.src = '';
-            preview.style.display = 'none';
-        }
-    }
+  
     
         
         </script>
