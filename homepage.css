@@ -560,7 +560,7 @@ a:hover{
     height: 40px;
     object-fit: contain;
 }
-button img:hover{
+.buttons button img:hover{
     filter: invert(100%);
 }
 
