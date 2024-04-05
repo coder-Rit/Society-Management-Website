@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
 }
-h1{
-    margin: 20px 0px;
-    text-align: center;
-    font-size: 40px;
-}
 main{
     background-color: #06f559;
     border: 1px solid black;
@@ -33,12 +28,14 @@ main{
 input[type="file"] {
     margin: 30px 0px 10px 0px;
 }
+
 input[type="text"]{
     width: calc(100% - 20px);
     padding: 8px;
-    margin: 40px 0px 10px 0px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    margin-top: 42px;
 }
 
 textarea {
@@ -52,14 +49,11 @@ textarea {
 
 .preview {
     width: 295px;
-    height: 180px;
+    height: 200px;
     margin-bottom: 10px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: -30px; 
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .button{
     /* border: 1px solid black; */
@@ -84,12 +78,22 @@ textarea {
     background-color: #45a049;
 }
 .preview {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 295px;
+    height: 180px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: -30px; 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .title{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 70px;
-    margin-top: -28px;
+    text-align: center;
+}
+h1{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 40px;
 }
