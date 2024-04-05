@@ -30,10 +30,10 @@ async function signUp() {
 		"password": password,
 		"flatNumber": flat,
 		"wing": wing,
-		"userType": userType
+		"userType": "admin"
 	}
 
-	console.log("1");
+	console.log(formData);
 
 
 	try {
@@ -41,6 +41,9 @@ async function signUp() {
 
 		const response = await fetch("https://socity-server-fourise.onrender.com/api/v1/signup", {
 			method: "POST",
+			headers:{
+				'Content-Type':'application/json',
+			},
 			body: JSON.stringify(formData)
 
 		})
