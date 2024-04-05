@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacilityAdmin</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<style>
+.container {
+    background-color: #06f559;
+    padding: 22px;
+}
+
+.box {
+    margin: 20px;
+    padding: 59px;
+    /* border: 2px solid #0a0909; */
+    background-color: #fdf7f7;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 13px;
+}
+
+
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 42px;
+}
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.preview {
+    width: 295px;
+    height: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: -30px; 
+}
+
+#submitBtn {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: -36px;
+}
+
+#submitBtn:hover {
+    background-color: #45a049;
+}
+
+
+.preview {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.titlee{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 70px;
+    margin-top: -28px;
+  
+}
+.maintitle{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 640px;
+}
+
+    
+</style>
+<body>
+    <main>
+        <h1 class="maintitle">Facility Page</h1>
+        <div class="container">
+            <div class="box">
+                <h2 class="titlee">Parking</h2>
+                <input type="file" id="file1" accept="image/png, image/jpg, image/jpeg">
+                <div class="preview" id="preview1"></div>
+                <input type="text" placeholder="Title" id="title1"> 
+                <textarea placeholder="Description" id="description1"></textarea>
+            </div>
+            <div class="box">
+                <h2 class="titlee">Security</h2>
+                <input type="file" id="file2">
+                <div class="preview" id="preview2"></div>
+                <input type="text" placeholder="Title" id="title2">
+                <textarea placeholder="Description" id="description2"></textarea>
+            </div>
+            <div class="box">
+                <h2 class="titlee">Power Backup</h2>
+                <input type="file" id="file3">
+                <div class="preview" id="preview3"></div>
+                <input type="text" placeholder="Title" id="title3">
+                <textarea placeholder="Description" id="description3"></textarea>
+            </div>
+            <div class="box">
+                <h2 class="titlee">Clubhouse</h2>
+                <input type="file" id="file3">
+                <div class="preview" id="preview3"></div>
+                <input type="text" placeholder="Title" id="title3">
+                <textarea placeholder="Description" id="description3"></textarea>
+            </div>
+            <div class="box">
+                <h2 class="titlee">Water Supply</h2>
+                <input type="file" id="file3">
+                <div class="preview" id="preview3"></div>
+                <input type="text" placeholder="Title" id="title3">
+                <textarea placeholder="Description" id="description3"></textarea>
+            </div>
+            <div class="box">
+                <h3 class="titlee">Garden Surroundings</h3>
+                <input type="file" id="file3">
+                <div class="preview" id="preview3"></div>
+                <input type="text" placeholder="Title" id="title3">
+                <textarea placeholder="Description" id="description3"></textarea>
+            </div>
+            <div class="box">
+                <h2 class="titlee">Kids Entertainment</h2>
+                <input type="file" id="file3">
+                <div class="preview" id="preview3"></div>
+                <input type="text" placeholder="Title" id="title3">
+                <textarea placeholder="Description" id="description3"></textarea>
+            </div>
+            <div class="box">
+                <h2 class="titlee">Maintenance</h2>
+                <input type="file" id="file3">
+                <div class="preview" id="preview3"></div>
+                <input type="text" placeholder="Title" id="title3">
+                <textarea placeholder="Description" id="description3"></textarea>
+            </div>
+            <div class="box">
+                <h2 class="titlee">Housekeeping</h2>
+                <input type="file" id="file3">
+                <div class="preview" id="preview3"></div>
+                <input type="text" placeholder="Title" id="title3">
+                <textarea placeholder="Description" id="description3"></textarea>
+            </div>
+        </div>
+        <button id="submitBtn">Submit</button>
+    </main>
+
+    <script>
+function handleFileSelect(input, preview) {
+    const file = input.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+        preview.innerHTML = `<img src="${e.target.result}" alt="Preview Image" style = "width: 295px; height: 200px;">`;
+    }
+
+    reader.readAsDataURL(file);
+}
+
+
+function handleFileInput() {
+    handleFileSelect(this, this.nextElementSibling);
+}
+
+
+document.querySelectorAll('input[type="file"]').forEach(input => {
+    input.addEventListener('change', handleFileInput);
+});
+
+
+document.getElementById('submitBtn').addEventListener('click', function() {
+
+    const title1 = document.getElementById('title1').value;
+    const description1 = document.getElementById('description1').value;
+    const title2 = document.getElementById('title2').value;
+    const description2 = document.getElementById('description2').value;
+    const title3 = document.getElementById('title3').value;
+    const description3 = document.getElementById('description3').value;
+
+    console.log("Title 1:", title1);
+    console.log("Description 1:", description1);
+    console.log("Title 2:", title2);
+    console.log("Description 2:", description2);
+    console.log("Title 3:", title3);
+    console.log("Description 3:", description3);
+});
+
+    </script>
+</body>
+
+</html>
