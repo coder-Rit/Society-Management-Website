@@ -233,10 +233,7 @@ textarea {
 }
 
 .contact-right{
-    background-image:url('Background_images/society6.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 5px solid #4dab6e;
+    background-color:#4dab6e;
     color: white;
     width: 35svw;
     /* flex-grow: 1; */
