@@ -3,7 +3,7 @@ function handleFileSelect(input, preview) {
     const reader = new FileReader();
 
     reader.onload = function (e) {
-        preview.innerHTML = `<img src="${e.target.result}" alt="Preview Image" style = "width: 295px; height: 200px;">`;
+        preview.innerHTML = `<img src="${e.target.result}" alt="Preview Image" style = "width: 295px; height: 180px;">`;
     }
 
     reader.readAsDataURL(file);

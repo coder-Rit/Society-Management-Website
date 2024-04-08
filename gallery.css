@@ -45,7 +45,7 @@ body {
     height: 90px;
 }
 header {
-    background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);;
+    background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
     color: white;
     display: flex;
     justify-content: space-between;

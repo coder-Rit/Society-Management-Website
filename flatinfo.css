@@ -255,7 +255,6 @@ main {
     grid-template-areas: "head head button"
         "info info button"
         "content content button"
-        "map map button";
 }
 
 .sideinfo .heading {
@@ -388,33 +387,6 @@ main {
     overflow: hidden;
     appearance: none;   
 }
-
-
-.sideinfo .map {
-    /* border: 1px solid black; */
-    grid-area: map;
-    display: flex;
-    gap: 4px;
-    justify-content: center;
-}
-
-.map .maps {
-    font-size: 17px;
-    border: none;
-    background-color: transparent;
-    color: #4dab6e;
-    text-decoration: underline;
-}
-
-.map img {
-    width: 20px;
-    height: 20px;
-    align-self: center;
-}
-
-.map .maps:hover {
-    text-decoration: none;
-}
 /* Popup box */
 .popup{
     background-color: #4dab6e;
@@ -473,16 +445,6 @@ main {
 .month{
     border-bottom: 1px solid rgba(0, 0, 0, 0.113);
 }
-#map{
-    grid-area: map;
-    display: none;
-    max-width: 100rem;
-    max-height: 540px;
-}
-iframe{
-    width: 99% ;
-    height: 40svh;
-}
 
 /* Contact Popup */
 .modal{
@@ -490,7 +452,7 @@ iframe{
     top: 150px;
     left: 600px;
     padding: 1em;
-    width: 40ch;
+    max-width: 400px;
     box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.3);
     border: 0;
 }

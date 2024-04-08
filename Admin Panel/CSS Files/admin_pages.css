@@ -3,7 +3,7 @@
     padding: 0;
 }
 main{
-    background-color: #06f559;
+    background: linear-gradient(74deg, #4dab6e 52%, rgb(191, 228, 135) 100%);
     border: 1px solid black;
     min-height: 120svh;
 }
@@ -13,6 +13,17 @@ main{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+.box button{
+    margin: 90px 0px 0px 0px ;
+    background-color: transparent;
+    border: none;
+    width: 300px;
+    height: 300px;
+}
+.box button img{
+    width: 200px;
+    height: 200px;
 }
 .box {
     /* margin: 20px; */
