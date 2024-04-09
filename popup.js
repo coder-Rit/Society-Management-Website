@@ -14,19 +14,6 @@ let show = function () {
     }
 }
 
-// function for Map
-const mapContainer = document.querySelector("#map");
-let showMap = function () {
-    if (isClicked) {
-        mapContainer.style.display = 'block';
-        isClicked = false;
-    }
-    else {
-        mapContainer.style.display = 'none'
-        isClicked = true;
-    }
-}
-
 // JS for modal opening
 const modal = document.querySelector('.modal');
 const openModal = document.querySelector('.contact');
