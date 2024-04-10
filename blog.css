@@ -21,6 +21,10 @@ html {
    grid-template-areas: "stack";
    /* grid-template-rows: 20px 20px; */
    height: 30px;
+   
+}
+marquee{
+   color: white;
 }
 .marquee>*{
    grid-area: stack;
@@ -51,10 +55,10 @@ html {
       background-color: yellow;
    }
    75%{
-      background-color: red;
+      background-color: lightgreen;
    }
    100%{
-      background-color: blue;
+      background-color: rgb(174, 112, 40);
    }
 }
 /* Scroll Watcher */
