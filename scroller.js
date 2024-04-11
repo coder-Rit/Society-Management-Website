@@ -15,7 +15,6 @@ function addAnimation(){
             const duplicatedItem = item.cloneNode(true);
             duplicatedItem.setAttribute("aria-hidden", true);
             scrollerInner.appendChild(duplicatedItem);
-            console.log(duplicatedItem)
         });
     });
 }

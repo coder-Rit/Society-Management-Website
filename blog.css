@@ -12,62 +12,13 @@ html {
    font-family: 'Poppins', sans-serif;
 }
 
-/* marquee tag */
-.marquee{
-   background-color: green;
-   /* color: white; */
-   font-weight: bold;   
-   display: grid;
-   grid-template-areas: "stack";
-   /* grid-template-rows: 20px 20px; */
-   height: 30px;
-   
-}
-marquee{
-   color: white;
-}
-.marquee>*{
-   grid-area: stack;
-}
-.box2{
-   justify-self: flex-end;
-}
-.box {
-   width: 83px;
-   font-size: 18px;
-   display: flex;
-   justify-content: center;
-   aspect-ratio: 3;
-   clip-path: polygon(87.36% 83.23%,61.54% 77.69%,47.31% 99.93%,35.55% 76.29%,9.29% 79.02%,20.44% 55.09%,1.92% 36.27%,27.59% 30.06%,30.76% 3.85%,51.61% 20.04%,74.09% 6.18%,74.43% 32.59%,99.27% 41.51%,78.85% 58.24%);
-   background-color: green;
-   position: relative;
-   animation-name: harry2;
-   animation-duration: 1.5s;
-   animation-iteration-count:infinite;
-   /* animation-fill-mode: alternate; */
-   animation-timing-function: ease-out;
- }
- @keyframes harry2 {
-   0%{
-      background-color: orange;
-   }
-   25%{
-      background-color: yellow;
-   }
-   75%{
-      background-color: lightgreen;
-   }
-   100%{
-      background-color: rgb(174, 112, 40);
-   }
-}
 /* Scroll Watcher */
 .scroll-watcher {
    height: 10px;
    position: fixed;
    top: 0;
    z-index: 1000;
-   background: linear-gradient( 329deg, #25a4c3,rgb(153, 231, 19));
+   background: linear-gradient( 329deg, #25a4c3,rgb(19, 231, 104));
    width: 100%;
    transform-origin: left;
    animation: scroll-watcher linear;
@@ -230,6 +181,7 @@ body {
 
 .notice {
    text-align: center;
+   margin-top: 20px;
 }
 
 .notice h1 {

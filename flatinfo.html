@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Feature images/apple-touch-icon.png">
     <title>Flat Info</title>
+    <script src="./meta.js"></script>
+
     <link rel="stylesheet" href="flatinfo.css">
     <script src="popup.js" defer></script>
 </head>
@@ -84,7 +86,7 @@
                         </div>
                         <button type="button" class="charges" onclick="show()">See other charges</button>
                         <button type="button" class="contact">Contact Owner</button>
-                        <dialog class="modal">
+                        <dialog class="modal" id="modal">
                             <div>
                                 <button class="close">&times;</button>
                             </div>
@@ -194,8 +196,7 @@
                 </div>
             </div>
         </div>
-
-
+        
         
     </main>
 

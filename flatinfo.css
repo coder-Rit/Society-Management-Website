@@ -205,8 +205,8 @@ main {
 .slider-wrapper{
     /* border: 1px solid black; */
     position: relative;
-    max-width: 570px;
-    max-height: 320px;
+    width: 570px;
+    height: 320px;
 }
 .slider{
     /* border: 1px solid black; */

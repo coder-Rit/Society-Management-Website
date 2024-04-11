@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Feature images/apple-touch-icon.png">
-    <link rel="stylesheet" href="login.css">
+
+    <script src="./meta.js"></script>
+
+    <link rel="stylesheet" href="toaster.css">
+    <script src="toaster.js"></script>
+    
     <script src="login.js" defer></script>
+    <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
 
 <body>
+    <div
+    id="toast"
+    ></div>
     <div class="scroll-watcher"></div>
     <header id="header">
         <div class="logo">
@@ -68,12 +77,6 @@
                         <input type="number" id="flat" placeholder="Flat Number" name="flatnumber"/>
                         <input type="text" id="wing" placeholder="Wing" name="wing"/>
                     </div>
-                    <select name="typeofuser" class="usertype" id="userType">
-                        <option value="Select" selected>Select Type of User</option>
-                        <option value="Tenant">Tenant</option>
-                        <option value="Committee Member">Committee Member</option>
-                        <option value="Society Manager">Society Manager</option>
-                    </select>
                     <button id="sign" type="button" onclick="signUp()"  >Sign Up</button>
                 </form>
             </div>
@@ -86,10 +89,10 @@
                         <a href="#" class="social"><img src="Feature images/twitter.png" alt="Twitter"></a>
                     </div>
                     <span>or use your account</span>
-                    <input type="email" class="email" placeholder="Email" name="email"/>
-                    <input type="password" class="password" placeholder="Password" name="password"/>
+                    <input type="email" class="email" id="log_email" placeholder="Email" name="email"/>
+                    <input type="password" class="password" id="log_pass" placeholder="Password" name="password"/>
                     <a href="#" class="fyg">Forgot your password?</a>
-                    <button id="log" type="submit" name="login">Log In</button>
+                    <button id="log" type="button" name="login" onclick="logIn()">Log In</button>
                 </form>
             </div>
             <div class="overlay-container">
