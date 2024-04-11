@@ -48,7 +48,14 @@ input[type="text"]{
     border-radius: 3px;
     margin-top: 42px;
 }
-
+input[type="date"]{
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+}
 textarea {
     width: calc(100% - 20px);
     padding: 8px;
@@ -57,11 +64,9 @@ textarea {
     height: 100px;
     resize: none;
 }
-
 .preview {
     width: 295px;
     height: 200px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: -30px; 

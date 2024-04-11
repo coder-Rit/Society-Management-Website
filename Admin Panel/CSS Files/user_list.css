@@ -35,8 +35,26 @@ table, th,td{
     border-collapse: collapse;
     border: 1px solid rgba(209, 209, 209, 0.403);
     padding: 5px;
-}td{
+}
+td{
     text-align: center;
+}
+#preview {
+    position: relative;
+    top: 30px;
+    left: -200px;
+    width: 295px;
+    height: 200px;
+    border: 1px solid black;
+    display: none;
+    border-radius: 3px;
+    margin-bottom: 30px; 
+}
+.payment button{
+    height: 20px;
+    width: 40px;
+    /* border: 1px solid black; */
+    font-size: 20px;
 }
 button{
     background-color: transparent;
@@ -63,7 +81,12 @@ td button:hover{
     background-color: rgba(185, 240, 196, 0.671);
     color: green;
 }
-.operation{
+/* .operation{
+    display: flex;
+    justify-content: center;
+} */
+.payment{
+    padding: 10px 15px;
     display: flex;
     justify-content: center;
 }

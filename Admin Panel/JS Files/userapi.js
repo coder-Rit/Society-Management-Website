@@ -23,19 +23,24 @@ async function getUser() {
 
             `
             <tr>
-            <td>${index+1}</td>
-            <td>${element.name}</td>
-            <td>${element.phoneNumber}</td>
-            <td>${element.email}</td>
-            <td>${element.flatNumber}</td>
-            <td>${element.wing}</td>
-            <td class="stats">
-            ${element.userType}
-            </td>
-            <td class="operation">
-                <button><img src="/Feature images/delete_icon.png" alt=""></button>
-            </td>
-        </tr> 
+                <td>${index + 1}</td>
+                <td>${element.name}</td>
+                <td>${element.phoneNumber}</td>
+                <td>${element.email}</td>
+                <td>${element.flatNumber}</td>
+                <td>${element.wing}</td>
+                <td class="stats">
+                    ${element.userType}
+                </td>
+                <td class="payment">
+                    <input type="file" id="file1" accept="image/png, image/jpg, image/jpeg" style="width: 180px;">
+                    <button id="show">&#x1F441;</button>   
+                    <div class="preview" id="preview"></div> 
+                </td>
+                <td class="operation">
+                    <button><img src="/Feature images/delete_icon.png" alt=""></button>
+                </td>
+            </tr> 
             `
 
         fullTbody += tempBody
@@ -49,3 +54,16 @@ async function getUser() {
 
 
 getUser()
+
+let isClicked = true;
+const divContainer = document.querySelector("#preview");
+let show = function () {
+    if (isClicked) {
+        divContainer.style.display = 'block';
+        isClicked = false;
+    }
+    else {
+        divContainer.style.display = 'none'
+        isClicked = true;
+    }
+}
