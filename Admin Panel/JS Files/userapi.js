@@ -33,9 +33,9 @@ async function getUser() {
                     ${element.userType}
                 </td>
                 <td class="payment">
-                    <input type="file" id="file1" accept="image/png, image/jpg, image/jpeg" style="width: 180px;">
-                    <button id="show">&#x1F441;</button>   
-                    <div class="preview" id="preview"></div> 
+                    <a href="/Feature images/delete_icon.png" target="blank">
+                        <img src=/Feature images/delete_icon.png" alt="">
+                    </a>   
                 </td>
                 <td class="operation">
                     <button><img src="/Feature images/delete_icon.png" alt=""></button>
@@ -55,15 +55,3 @@ async function getUser() {
 
 getUser()
 
-let isClicked = true;
-const divContainer = document.querySelector("#preview");
-let show = function () {
-    if (isClicked) {
-        divContainer.style.display = 'block';
-        isClicked = false;
-    }
-    else {
-        divContainer.style.display = 'none'
-        isClicked = true;
-    }
-}
